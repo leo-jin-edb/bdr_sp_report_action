@@ -44,7 +44,7 @@ function run() {
             const ms = core.getInput('milliseconds');
             core.debug(`Waiting ${ms} milliseconds ...`); // debug is only output if you set the secret `ACTIONS_RUNNER_DEBUG` to true
             console.log('am i hitting this waiting for ' + ms);
-            core.info('jus testing info logging test changes!!!');
+            core.info('jus testing info logging test changes!!! ok one shot update');
             core.debug(new Date().toTimeString());
             yield wait_1.wait(parseInt(ms, 10));
             core.debug(new Date().toTimeString());
