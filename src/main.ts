@@ -7,7 +7,7 @@ async function run(): Promise<void> {
     core.debug(`Waiting ${ms} milliseconds ...`) // debug is only output if you set the secret `ACTIONS_RUNNER_DEBUG` to true
 
     console.log('am i hitting this waiting for ' + ms)
-    core.info('jus testing info logging')
+    core.info('jus testing info logging test changes')
     core.debug(new Date().toTimeString())
     await wait(parseInt(ms, 10))
     core.debug(new Date().toTimeString())
