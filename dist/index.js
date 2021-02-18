@@ -87,11 +87,10 @@ let jiraApi;
 const getAllIssuesForSprint = (sprintId) => __awaiter(void 0, void 0, void 0, function* () {
     const jql = `project = 'BDR (Bi-directional replication)' AND Sprint = ${sprintId}`;
     console.log('jql = ', jql);
-    // const response = await jiraApi.searchJira(jql, {
-    //   fields: ['issuekey', 'summary', 'status', 'assignee', 'created', 'sprint.name', 'sprint.id'],
-    //   // expand: ['changelog'],
-    // })
-    const response = yield jiraApi.findIssue('BDR-130');
+    const response = yield jiraApi.searchJira(jql, {
+        fields: ['issuekey', 'summary', 'status', 'assignee', 'created', 'sprint.name', 'sprint.id'],
+        expand: ['changelog'],
+    });
     console.log('hello = ', response);
     return response;
 });
