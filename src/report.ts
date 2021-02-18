@@ -1,4 +1,5 @@
 import JiraClient from 'jira-client'
+import fs from 'fs'
 
 let jiraApi: JiraClient
 
@@ -9,6 +10,7 @@ const getAllIssuesForSprint = async (sprintId: string) => {
     fields: ['issuekey', 'summary', 'status', 'assignee', 'created', 'sprint.name', 'sprint.id'],
     expand: ['changelog'],
   })
+
   console.log('hello = ', JSON.stringify(response))
   return response
 }
