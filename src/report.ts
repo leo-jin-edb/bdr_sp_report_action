@@ -10,6 +10,7 @@ const getAllIssuesForSprint = async (sprintId: string) => {
   //   // expand: ['changelog'],
   // })
   const response = await jiraApi.findIssue('BDR-130');
+  console.log('hello = ', response)
   return response
 }
 

@@ -92,6 +92,7 @@ const getAllIssuesForSprint = (sprintId) => __awaiter(void 0, void 0, void 0, fu
     //   // expand: ['changelog'],
     // })
     const response = yield jiraApi.findIssue('BDR-130');
+    console.log('hello = ', response);
     return response;
 });
 exports.getAllIssuesForSprint = getAllIssuesForSprint;
