@@ -5,11 +5,10 @@ let jiraApi: JiraClient
 const getAllIssuesForSprint = async (sprintId: string) => {
   const jql = `project = 'BDR (Bi-directional replication)' AND Sprint = ${sprintId}`
   console.log('jql = ', jql)
-  // const response = await jiraApi.searchJira(jql, {
-  //   fields: ['issuekey', 'summary', 'status', 'assignee', 'created', 'sprint.name', 'sprint.id'],
-  //   // expand: ['changelog'],
-  // })
-  const response = await jiraApi.findIssue('BDR-130');
+  const response = await jiraApi.searchJira(jql, {
+    fields: ['issuekey', 'summary', 'status', 'assignee', 'created', 'sprint.name', 'sprint.id'],
+    expand: ['changelog'],
+  })
   console.log('hello = ', response)
   return response
 }
@@ -34,6 +33,4 @@ const initialize = () => {
 
 initialize()
 
-export {
-  getAllIssuesForSprint
-}
+export {getAllIssuesForSprint}
