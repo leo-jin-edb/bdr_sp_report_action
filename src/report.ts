@@ -7,7 +7,7 @@ const getAllIssuesForSprint = async (sprintId: string) => {
   console.log('jql = ', jql)
   const response = await jiraApi.searchJira(jql, {
     fields: ['issuekey', 'summary', 'status', 'assignee', 'created', 'sprint.name', 'sprint.id'],
-    expand: ['changelog'],
+    // expand: ['changelog'],
   })
   return response
 }
