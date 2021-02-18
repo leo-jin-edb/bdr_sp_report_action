@@ -89,7 +89,7 @@ const getAllIssuesForSprint = (sprintId) => __awaiter(void 0, void 0, void 0, fu
     const jql = `project = 'BDR (Bi-directional replication)' AND Sprint = ${sprintId}`;
     console.log('jql = ', jql);
     const response = yield jiraApi.searchJira(jql, {
-        fields: ['issuekey', 'summary', 'status', 'assignee', 'created', 'sprint.name', 'sprint.id'],
+        fields: ['issuekey', 'issuetype', 'summary', 'status', 'assignee', 'created', 'sprint.name', 'sprint.id'],
         expand: ['changelog'],
     });
     fs_1.default.writeFileSync('/Users/leo.jin/jira_response.json', JSON.stringify(response));
@@ -100,6 +100,7 @@ exports.getAllIssuesForSprint = getAllIssuesForSprint;
 const initialize = () => {
     const jiraApiToken = process.env['JIRA_API_TOKEN'];
     const jiraApiInfo = process.env['JIRA_BASE_URL'] ? process.env['JIRA_BASE_URL'].split(':') : null;
+    console.log(jiraApiInfo);
     if (jiraApiInfo) {
         const jiraConfig = {
             protocol: jiraApiInfo[0],
