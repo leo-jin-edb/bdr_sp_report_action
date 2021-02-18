@@ -89,7 +89,6 @@ const getAllIssuesForSprint = (sprintId) => __awaiter(void 0, void 0, void 0, fu
     console.log('jql = ', jql);
     const response = yield jiraApi.searchJira(jql, {
         fields: ['issuekey', 'summary', 'status', 'assignee', 'created', 'sprint.name', 'sprint.id'],
-        expand: ['changelog'],
     });
     return response;
 });
