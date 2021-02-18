@@ -88,6 +88,57 @@ const jira_client_1 = __importDefault(__webpack_require__(6411));
 const lodash_1 = __webpack_require__(250);
 const date_fns_1 = __webpack_require__(3314);
 let jiraApi;
+const transformHistory = (histories) => {
+    const history = lodash_1.reverse(lodash_1.flattenDeep(histories.map((hist) => {
+        return hist.items
+            .filter((item) => {
+            return item.field === 'status';
+        })
+            .map((item) => {
+            return {
+                created: hist.created,
+                from: item.fromString,
+                to: item.toString,
+                fromId: item.from,
+                toId: item.to,
+            };
+        });
+    })));
+    for (let i = 0; i < history.length; i++) {
+        const lastIndex = i - 1;
+        if (lastIndex >= 0) {
+            const lastHist = history[lastIndex];
+            const currentHist = history[i];
+            const lastCreated = new Date(lastHist.created);
+            const currentCreated = new Date(currentHist.created);
+            const diffInSec = date_fns_1.differenceInSeconds(currentCreated, lastCreated);
+            currentHist.diffInMin = (diffInSec / 60).toFixed(2);
+            currentHist.diffInSec = diffInSec.toFixed(2);
+            currentHist.diffInHour = (diffInSec / 60 / 60).toFixed(2);
+        }
+    }
+    return history;
+};
+const calculateTotals = (issues) => {
+    const calculate = (type) => {
+        return issues.reduce((aggr, issue) => {
+            if (issue.type === type) {
+                aggr++;
+            }
+            return aggr;
+        }, 0);
+    };
+    const totalSubtasks = calculate('Sub-task');
+    const totalBugs = calculate('Bug');
+    const totalStories = calculate('Story');
+    const totalTasks = calculate('Task');
+    return {
+        totalStories,
+        totalTasks,
+        totalBugs,
+        totalSubtasks,
+    };
+};
 const getAllIssuesForSprint = (sprintId) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const jql = `project = 'BDR (Bi-directional replication)' AND Sprint = ${sprintId}`;
@@ -101,34 +152,7 @@ const getAllIssuesForSprint = (sprintId) => __awaiter(void 0, void 0, void 0, fu
             const { id, key, fields, changelog } = issue;
             const { summary, issuetype, assignee, status, created } = fields;
             const { histories } = changelog;
-            const history = lodash_1.reverse(lodash_1.flattenDeep(histories.map((hist) => {
-                return hist.items
-                    .filter((item) => {
-                    return item.field === 'status';
-                })
-                    .map((item) => {
-                    return {
-                        created: hist.created,
-                        from: item.fromString,
-                        to: item.toString,
-                        fromId: item.from,
-                        toId: item.to,
-                    };
-                });
-            })));
-            for (let i = 0; i < history.length; i++) {
-                const lastIndex = i - 1;
-                if (lastIndex >= 0) {
-                    const lastHist = history[lastIndex];
-                    const currentHist = history[i];
-                    const lastCreated = new Date(lastHist.created);
-                    const currentCreated = new Date(currentHist.created);
-                    const diffInSec = date_fns_1.differenceInSeconds(currentCreated, lastCreated);
-                    currentHist.diffInMin = (diffInSec / 60).toFixed(2);
-                    currentHist.diffInSec = diffInSec.toFixed(2);
-                    currentHist.diffInHour = (diffInSec / 60 / 60).toFixed(2);
-                }
-            }
+            const history = transformHistory(histories);
             return {
                 id,
                 key,
@@ -140,17 +164,14 @@ const getAllIssuesForSprint = (sprintId) => __awaiter(void 0, void 0, void 0, fu
                 history,
             };
         });
-        const totalSubtasks = issuesLite.reduce((aggr, issue) => {
-            if (issue.type === 'Sub-task') {
-                aggr++;
-            }
-            return aggr;
-        }, 0);
-        return {
-            total,
-            totalSubtasks,
-            issues: issuesLite,
-        };
+        // const totalSubtasks = issuesLite.reduce((aggr: number, issue: any) => {
+        //   if (issue.type === 'Sub-task') {
+        //     aggr++
+        //   }
+        //   return aggr
+        // }, 0)
+        const moreTotals = calculateTotals(issuesLite);
+        return Object.assign(Object.assign({ total }, moreTotals), { issues: issuesLite });
     }
     catch (e) {
         console.log(e);
