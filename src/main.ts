@@ -1,6 +1,7 @@
 import * as core from '@actions/core'
 import {wait} from './wait'
 import {getAllIssuesForSprint} from './report'
+import {writeFileSync} from 'fs'
 
 async function run(): Promise<void> {
   try {
@@ -13,7 +14,11 @@ async function run(): Promise<void> {
     await wait(parseInt(ms, 10))
     core.debug(new Date().toTimeString())
     const data = await getAllIssuesForSprint('1345')
-    console.log('data = ', data)
+    // console.log('data = ', data)
+    writeFileSync(
+      '/Users/leo.jin/development/tools/reporting/bdr_sp_report_action/jira_response.json',
+      JSON.stringify(data, null, 2),
+    )
 
     core.setOutput('time', new Date().toTimeString())
   } catch (error) {

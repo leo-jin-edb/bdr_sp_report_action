@@ -260,6 +260,15 @@
       },
       "fields": {
         "summary": "Fix incompatibility in client response between 3.6 and 3.7",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10004",
+          "id": "10004",
+          "description": "A problem which impairs or prevents the functions of the product.",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10303&avatarType=issuetype",
+          "name": "Bug",
+          "subtask": false,
+          "avatarId": 10303
+        },
         "assignee": {
           "self": "https://enterprisedb.atlassian.net/rest/api/2/user?accountId=5f75b583a29096007501ce07",
           "accountId": "5f75b583a29096007501ce07",
@@ -517,6 +526,15 @@
       },
       "fields": {
         "summary": "Fix a bug where \"kv_data\" is not included in the snapshot created by 3.7 for 3.6",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10003",
+          "id": "10003",
+          "description": "The sub-task of the issue",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10316&avatarType=issuetype",
+          "name": "Sub-task",
+          "subtask": true,
+          "avatarId": 10316
+        },
         "assignee": {
           "self": "https://enterprisedb.atlassian.net/rest/api/2/user?accountId=5f75b583a29096007501ce07",
           "accountId": "5f75b583a29096007501ce07",
@@ -773,6 +791,15 @@
       },
       "fields": {
         "summary": "Provision failure in AV machinery",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10003",
+          "id": "10003",
+          "description": "The sub-task of the issue",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10316&avatarType=issuetype",
+          "name": "Sub-task",
+          "subtask": true,
+          "avatarId": 10316
+        },
         "assignee": {
           "self": "https://enterprisedb.atlassian.net/rest/api/2/user?accountId=5f760ad2e31b69006f94d463",
           "accountId": "5f760ad2e31b69006f94d463",
@@ -1062,6 +1089,15 @@
       },
       "fields": {
         "summary": "HTML docs of BDR show wrong version",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10003",
+          "id": "10003",
+          "description": "The sub-task of the issue",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10316&avatarType=issuetype",
+          "name": "Sub-task",
+          "subtask": true,
+          "avatarId": 10316
+        },
         "assignee": {
           "self": "https://enterprisedb.atlassian.net/rest/api/2/user?accountId=5f7799bbe31b69006fa1b43f",
           "accountId": "5f7799bbe31b69006fa1b43f",
@@ -1317,6 +1353,15 @@
       },
       "fields": {
         "summary": "Is 'Release is Scheduled' mail sent to ACI (two business days before release)?",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10003",
+          "id": "10003",
+          "description": "The sub-task of the issue",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10316&avatarType=issuetype",
+          "name": "Sub-task",
+          "subtask": true,
+          "avatarId": 10316
+        },
         "assignee": {
           "self": "https://enterprisedb.atlassian.net/rest/api/2/user?accountId=5f756904e31b69006f8ea4b5",
           "accountId": "5f756904e31b69006f8ea4b5",
@@ -1574,6 +1619,15 @@
       },
       "fields": {
         "summary": "Add a read-only or a dry-run option to read exported snapshot without actually restoring it",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10003",
+          "id": "10003",
+          "description": "The sub-task of the issue",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10316&avatarType=issuetype",
+          "name": "Sub-task",
+          "subtask": true,
+          "avatarId": 10316
+        },
         "assignee": {
           "self": "https://enterprisedb.atlassian.net/rest/api/2/user?accountId=5f75b583a29096007501ce07",
           "accountId": "5f75b583a29096007501ce07",
@@ -1741,6 +1795,15 @@
       },
       "fields": {
         "summary": "Are things working sufficiently fine for performance tests for BDR 3.6.25?",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10003",
+          "id": "10003",
+          "description": "The sub-task of the issue",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10316&avatarType=issuetype",
+          "name": "Sub-task",
+          "subtask": true,
+          "avatarId": 10316
+        },
         "assignee": {
           "self": "https://enterprisedb.atlassian.net/rest/api/2/user?accountId=5f779a143fe07600696b8f46",
           "accountId": "5f779a143fe07600696b8f46",
@@ -1967,6 +2030,15 @@
       },
       "fields": {
         "summary": "Do regression/TAP/isolation tests on CI integration-tests/parallel-test job (on PG 11/ 2ndQ PG 11) pass reasonably ",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10003",
+          "id": "10003",
+          "description": "The sub-task of the issue",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10316&avatarType=issuetype",
+          "name": "Sub-task",
+          "subtask": true,
+          "avatarId": 10316
+        },
         "assignee": {
           "self": "https://enterprisedb.atlassian.net/rest/api/2/user?accountId=5f756904e31b69006f8ea4b5",
           "accountId": "5f756904e31b69006f8ea4b5",
@@ -2194,6 +2266,15 @@
       },
       "fields": {
         "summary": "With BDR 3.6 & 2ndQ PG 11 , latest code, regression tests `postinit_local_state, postjoin_local_state` are failing. ",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10003",
+          "id": "10003",
+          "description": "The sub-task of the issue",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10316&avatarType=issuetype",
+          "name": "Sub-task",
+          "subtask": true,
+          "avatarId": 10316
+        },
         "assignee": {
           "self": "https://enterprisedb.atlassian.net/rest/api/2/user?accountId=5f75653858899e0070628376",
           "accountId": "5f75653858899e0070628376",
@@ -2480,6 +2561,15 @@
       },
       "fields": {
         "summary": "In pglogical 3.6 SE pipeline, RPMs smoke-tests for PG 9.4 are failing.",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10003",
+          "id": "10003",
+          "description": "The sub-task of the issue",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10316&avatarType=issuetype",
+          "name": "Sub-task",
+          "subtask": true,
+          "avatarId": 10316
+        },
         "assignee": null,
         "created": "2021-02-04T04:53:39.762-0500",
         "status": {
@@ -2781,6 +2871,15 @@
       },
       "fields": {
         "summary": "In pglogical 3.6 SE & BDR 3.7 SE pipeline, all Centos8 smoke-tests are failing.",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10003",
+          "id": "10003",
+          "description": "The sub-task of the issue",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10316&avatarType=issuetype",
+          "name": "Sub-task",
+          "subtask": true,
+          "avatarId": 10316
+        },
         "assignee": {
           "self": "https://enterprisedb.atlassian.net/rest/api/2/user?accountId=5f756904e31b69006f8ea4b5",
           "accountId": "5f756904e31b69006f8ea4b5",
@@ -3187,6 +3286,15 @@
       },
       "fields": {
         "summary": "Complete remaining tasks for 2ndQ PG 11.11r1.6.25 release.",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10003",
+          "id": "10003",
+          "description": "The sub-task of the issue",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10316&avatarType=issuetype",
+          "name": "Sub-task",
+          "subtask": true,
+          "avatarId": 10316
+        },
         "assignee": {
           "self": "https://enterprisedb.atlassian.net/rest/api/2/user?accountId=5f779a18459d42006977b5e0",
           "accountId": "5f779a18459d42006977b5e0",
@@ -3383,6 +3491,15 @@
       },
       "fields": {
         "summary": "Add release notes for pglogical & BDR 3.6.25",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10003",
+          "id": "10003",
+          "description": "The sub-task of the issue",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10316&avatarType=issuetype",
+          "name": "Sub-task",
+          "subtask": true,
+          "avatarId": 10316
+        },
         "assignee": {
           "self": "https://enterprisedb.atlassian.net/rest/api/2/user?accountId=5f75843be0e85a006e58e932",
           "accountId": "5f75843be0e85a006e58e932",
@@ -3580,6 +3697,15 @@
       },
       "fields": {
         "summary": "Pglogical 3.6 SE & EE build is failing with error : `fatal: clone of 'git@github.com:EnterpriseDB/pglogical_dump.git' into submodule path '/var/lib/jenkins/workspace/pglogical3_6-2ndqpg/pglogical3_6-2ndqpg/src/pglogical_dump' failed`",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10003",
+          "id": "10003",
+          "description": "The sub-task of the issue",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10316&avatarType=issuetype",
+          "name": "Sub-task",
+          "subtask": true,
+          "avatarId": 10316
+        },
         "assignee": {
           "self": "https://enterprisedb.atlassian.net/rest/api/2/user?accountId=5f756904e31b69006f8ea4b5",
           "accountId": "5f756904e31b69006f8ea4b5",
@@ -3838,6 +3964,15 @@
       },
       "fields": {
         "summary": "With BDR 3.6 & 2ndQ PG 11 , latest code, test 800_probe_points_ddl_dml_locking_remote.pl is timing out",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10003",
+          "id": "10003",
+          "description": "The sub-task of the issue",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10316&avatarType=issuetype",
+          "name": "Sub-task",
+          "subtask": true,
+          "avatarId": 10316
+        },
         "assignee": {
           "self": "https://enterprisedb.atlassian.net/rest/api/2/user?accountId=5f779a074d09f70076fbcf2e",
           "accountId": "5f779a074d09f70076fbcf2e",
@@ -4034,6 +4169,15 @@
       },
       "fields": {
         "summary": "With BDR 3.6 & 2ndQ PG 11 , latest code, test 017_concurrent_join_diff_upstream_withload.pl is timing out",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10003",
+          "id": "10003",
+          "description": "The sub-task of the issue",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10316&avatarType=issuetype",
+          "name": "Sub-task",
+          "subtask": true,
+          "avatarId": 10316
+        },
         "assignee": {
           "self": "https://enterprisedb.atlassian.net/rest/api/2/user?accountId=5f75653858899e0070628376",
           "accountId": "5f75653858899e0070628376",
@@ -4261,6 +4405,15 @@
       },
       "fields": {
         "summary": "Refactor 3.7 code for better management/readability",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10003",
+          "id": "10003",
+          "description": "The sub-task of the issue",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10316&avatarType=issuetype",
+          "name": "Sub-task",
+          "subtask": true,
+          "avatarId": 10316
+        },
         "assignee": {
           "self": "https://enterprisedb.atlassian.net/rest/api/2/user?accountId=5f75b583a29096007501ce07",
           "accountId": "5f75b583a29096007501ce07",
@@ -4636,6 +4789,15 @@
       },
       "fields": {
         "summary": "Check on a local setup of BDR 3.6 & 2ndQ PG 11 , latest code, whether these tests are passing : 017_concurrent_join_diff_upstream_withload.pl & 800_probe_points_ddl_dml_locking_remote.pl",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10003",
+          "id": "10003",
+          "description": "The sub-task of the issue",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10316&avatarType=issuetype",
+          "name": "Sub-task",
+          "subtask": true,
+          "avatarId": 10316
+        },
         "assignee": {
           "self": "https://enterprisedb.atlassian.net/rest/api/2/user?accountId=5f75653858899e0070628376",
           "accountId": "5f75653858899e0070628376",
@@ -4863,6 +5025,15 @@
       },
       "fields": {
         "summary": "pglogical 3.6 SE builds are failing for PG versions lower than PG 11 with `pglogical_executor.c:709:8: note: each undeclared identifier is reported only once for each function it appears in`",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10003",
+          "id": "10003",
+          "description": "The sub-task of the issue",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10316&avatarType=issuetype",
+          "name": "Sub-task",
+          "subtask": true,
+          "avatarId": 10316
+        },
         "assignee": {
           "self": "https://enterprisedb.atlassian.net/rest/api/2/user?accountId=5f75843be0e85a006e58e932",
           "accountId": "5f75843be0e85a006e58e932",
@@ -5120,6 +5291,15 @@
       },
       "fields": {
         "summary": "Refactor existing 3.7 and 3.6 code to adhere to the proposed changes",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10003",
+          "id": "10003",
+          "description": "The sub-task of the issue",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10316&avatarType=issuetype",
+          "name": "Sub-task",
+          "subtask": true,
+          "avatarId": 10316
+        },
         "assignee": {
           "self": "https://enterprisedb.atlassian.net/rest/api/2/user?accountId=5f75b583a29096007501ce07",
           "accountId": "5f75b583a29096007501ce07",
@@ -5347,6 +5527,15 @@
       },
       "fields": {
         "summary": "Study the existing snapshot versioning mechanism and write a proposal to address it in the long term",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10003",
+          "id": "10003",
+          "description": "The sub-task of the issue",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10316&avatarType=issuetype",
+          "name": "Sub-task",
+          "subtask": true,
+          "avatarId": 10316
+        },
         "assignee": {
           "self": "https://enterprisedb.atlassian.net/rest/api/2/user?accountId=5f75b583a29096007501ce07",
           "accountId": "5f75b583a29096007501ce07",
@@ -5544,6 +5733,15 @@
       },
       "fields": {
         "summary": "merge the commits in REL_11_STABLE branch after REL_11_10 tag, into 2QREL_11_STABLE_3_6 branch. Also move its version to 2ndQ PG 11.11r2ndq1.6.25.",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10003",
+          "id": "10003",
+          "description": "The sub-task of the issue",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10316&avatarType=issuetype",
+          "name": "Sub-task",
+          "subtask": true,
+          "avatarId": 10316
+        },
         "assignee": {
           "self": "https://enterprisedb.atlassian.net/rest/api/2/user?accountId=5f779a18459d42006977b5e0",
           "accountId": "5f779a18459d42006977b5e0",
@@ -6135,6 +6333,15 @@
       },
       "fields": {
         "summary": "BDR wrapper for `pglogical.alter_subscription_skip_changes_upto`",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10003",
+          "id": "10003",
+          "description": "The sub-task of the issue",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10316&avatarType=issuetype",
+          "name": "Sub-task",
+          "subtask": true,
+          "avatarId": 10316
+        },
         "assignee": {
           "self": "https://enterprisedb.atlassian.net/rest/api/2/user?accountId=5f74b0afa290960075f952fe",
           "accountId": "5f74b0afa290960075f952fe",
@@ -6447,6 +6654,15 @@
       },
       "fields": {
         "summary": "Analysis  on other pgl wrapper functions",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10003",
+          "id": "10003",
+          "description": "The sub-task of the issue",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10316&avatarType=issuetype",
+          "name": "Sub-task",
+          "subtask": true,
+          "avatarId": 10316
+        },
         "assignee": {
           "self": "https://enterprisedb.atlassian.net/rest/api/2/user?accountId=5f74b0afa290960075f952fe",
           "accountId": "5f74b0afa290960075f952fe",
@@ -6765,6 +6981,15 @@
       },
       "fields": {
         "summary": "Fix broken ddl_epoch snapshot writing in 3.7 (consensus protocol version)",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10002",
+          "id": "10002",
+          "description": "A task that needs to be done.",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+          "name": "Task",
+          "subtask": false,
+          "avatarId": 10318
+        },
         "assignee": {
           "self": "https://enterprisedb.atlassian.net/rest/api/2/user?accountId=5f75b583a29096007501ce07",
           "accountId": "5f75b583a29096007501ce07",
@@ -7324,6 +7549,15 @@
       },
       "fields": {
         "summary": "wal decoder is not enabled on newly joined node",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10002",
+          "id": "10002",
+          "description": "A task that needs to be done.",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+          "name": "Task",
+          "subtask": false,
+          "avatarId": 10318
+        },
         "assignee": {
           "self": "https://enterprisedb.atlassian.net/rest/api/2/user?accountId=557058%3Ac82f6620-a6aa-45db-b235-ccc8e61fa3bb",
           "accountId": "557058:c82f6620-a6aa-45db-b235-ccc8e61fa3bb",
@@ -7897,6 +8131,15 @@
       },
       "fields": {
         "summary": "Reduce 2QPG code foot-print",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10002",
+          "id": "10002",
+          "description": "A task that needs to be done.",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+          "name": "Task",
+          "subtask": false,
+          "avatarId": 10318
+        },
         "assignee": {
           "self": "https://enterprisedb.atlassian.net/rest/api/2/user?accountId=557058%3Ac82f6620-a6aa-45db-b235-ccc8e61fa3bb",
           "accountId": "557058:c82f6620-a6aa-45db-b235-ccc8e61fa3bb",
@@ -8163,6 +8406,15 @@
       },
       "fields": {
         "summary": "Add BDR wrapper for `pglogical.alter_subscription_skip_changes_upto`",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10002",
+          "id": "10002",
+          "description": "A task that needs to be done.",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+          "name": "Task",
+          "subtask": false,
+          "avatarId": 10318
+        },
         "assignee": {
           "self": "https://enterprisedb.atlassian.net/rest/api/2/user?accountId=5f74b0afa290960075f952fe",
           "accountId": "5f74b0afa290960075f952fe",
@@ -8594,6 +8846,15 @@
       },
       "fields": {
         "summary": "BDR 3.6.25 preparation",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10002",
+          "id": "10002",
+          "description": "A task that needs to be done.",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+          "name": "Task",
+          "subtask": false,
+          "avatarId": 10318
+        },
         "assignee": {
           "self": "https://enterprisedb.atlassian.net/rest/api/2/user?accountId=5f756904e31b69006f8ea4b5",
           "accountId": "5f756904e31b69006f8ea4b5",
@@ -8941,6 +9202,15 @@
       },
       "fields": {
         "summary": "Async commit for CAMO",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10002",
+          "id": "10002",
+          "description": "A task that needs to be done.",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+          "name": "Task",
+          "subtask": false,
+          "avatarId": 10318
+        },
         "assignee": {
           "self": "https://enterprisedb.atlassian.net/rest/api/2/user?accountId=5f779a074d09f70076fbcf2e",
           "accountId": "5f779a074d09f70076fbcf2e",
@@ -9318,6 +9588,15 @@
       },
       "fields": {
         "summary": "Make consensus snapshot versioning declarative",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10002",
+          "id": "10002",
+          "description": "A task that needs to be done.",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+          "name": "Task",
+          "subtask": false,
+          "avatarId": 10318
+        },
         "assignee": {
           "self": "https://enterprisedb.atlassian.net/rest/api/2/user?accountId=5f75b583a29096007501ce07",
           "accountId": "5f75b583a29096007501ce07",
@@ -9827,6 +10106,15 @@
       },
       "fields": {
         "summary": "PGL DDL replication preprocess call should override internal logic",
+        "issuetype": {
+          "self": "https://enterprisedb.atlassian.net/rest/api/2/issuetype/10002",
+          "id": "10002",
+          "description": "A task that needs to be done.",
+          "iconUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+          "name": "Task",
+          "subtask": false,
+          "avatarId": 10318
+        },
         "assignee": {
           "self": "https://enterprisedb.atlassian.net/rest/api/2/user?accountId=557058%3Aafa59d19-6889-47ed-99df-19be98f99e15",
           "accountId": "557058:afa59d19-6889-47ed-99df-19be98f99e15",
