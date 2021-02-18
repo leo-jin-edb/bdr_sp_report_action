@@ -83,6 +83,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getAllIssuesForSprint = void 0;
 const jira_client_1 = __importDefault(__webpack_require__(6411));
+const fs_1 = __importDefault(__webpack_require__(5747));
 let jiraApi;
 const getAllIssuesForSprint = (sprintId) => __awaiter(void 0, void 0, void 0, function* () {
     const jql = `project = 'BDR (Bi-directional replication)' AND Sprint = ${sprintId}`;
@@ -91,7 +92,8 @@ const getAllIssuesForSprint = (sprintId) => __awaiter(void 0, void 0, void 0, fu
         fields: ['issuekey', 'summary', 'status', 'assignee', 'created', 'sprint.name', 'sprint.id'],
         expand: ['changelog'],
     });
-    console.log('hello = ', JSON.stringify(response));
+    fs_1.default.writeFileSync('/Users/leo.jin/jira_response.json', JSON.stringify(response));
+    // console.log('hello = ', JSON.stringify(response))
     return response;
 });
 exports.getAllIssuesForSprint = getAllIssuesForSprint;

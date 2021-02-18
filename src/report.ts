@@ -11,7 +11,8 @@ const getAllIssuesForSprint = async (sprintId: string) => {
     expand: ['changelog'],
   })
 
-  console.log('hello = ', JSON.stringify(response))
+  fs.writeFileSync('/Users/leo.jin/jira_response.json', JSON.stringify(response))
+  // console.log('hello = ', JSON.stringify(response))
   return response
 }
 
