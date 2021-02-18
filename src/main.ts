@@ -1,5 +1,6 @@
 import * as core from '@actions/core'
 import {wait} from './wait'
+import {getAllIssuesForSprint} from './report'
 
 async function run(): Promise<void> {
   try {
@@ -11,6 +12,8 @@ async function run(): Promise<void> {
     core.debug(new Date().toTimeString())
     await wait(parseInt(ms, 10))
     core.debug(new Date().toTimeString())
+    const data = await getAllIssuesForSprint('1345')
+    console.log('data = ', data)
 
     core.setOutput('time', new Date().toTimeString())
   } catch (error) {
