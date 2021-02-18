@@ -86,6 +86,7 @@ const jira_client_1 = __importDefault(__webpack_require__(6411));
 let jiraApi;
 const getAllIssuesForSprint = (sprintId) => __awaiter(void 0, void 0, void 0, function* () {
     const jql = `project = 'BDR (Bi-directional replication)' AND Sprint = ${sprintId}`;
+    console.log('jql = ', jql);
     const response = yield jiraApi.searchJira(jql, {
         fields: ['issuekey', 'summary', 'status', 'assignee', 'created', 'sprint.name', 'sprint.id'],
         expand: ['changelog'],
