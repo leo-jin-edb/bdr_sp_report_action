@@ -12,6 +12,9 @@ test(`report test`, async () => {
   const data = await getAllIssuesForSprint('test')
   expect(data?.total).toBeTruthy()
   expect(data?.totalSubtasks).toBeGreaterThan(0)
+  expect(data?.totalStories).toEqual(0)
+  expect(data?.totalTasks).toBeGreaterThan(0)
+  expect(data?.totalBugs).toBeGreaterThan(0)
   expect(data?.issues.length).toBeGreaterThan(0)
   // console.log(JSON.stringify(data?.issues, null, 2))
   data?.issues.forEach((issue: any) => {

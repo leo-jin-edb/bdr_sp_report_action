@@ -4,6 +4,63 @@ import {differenceInSeconds} from 'date-fns'
 
 let jiraApi: JiraClient
 
+const transformHistory = (histories: any[]) => {
+  const history = reverse(
+    flattenDeep(
+      histories.map((hist: any) => {
+        return hist.items
+          .filter((item: any) => {
+            return item.field === 'status'
+          })
+          .map((item: any) => {
+            return {
+              created: hist.created,
+              from: item.fromString,
+              to: item.toString,
+              fromId: item.from,
+              toId: item.to,
+            }
+          })
+      }),
+    ),
+  )
+  for (let i = 0; i < history.length; i++) {
+    const lastIndex = i - 1
+    if (lastIndex >= 0) {
+      const lastHist = history[lastIndex] as any
+      const currentHist = history[i] as any
+      const lastCreated = new Date(lastHist.created)
+      const currentCreated = new Date(currentHist.created)
+      const diffInSec = differenceInSeconds(currentCreated, lastCreated)
+      currentHist.diffInMin = (diffInSec / 60).toFixed(2)
+      currentHist.diffInSec = diffInSec.toFixed(2)
+      currentHist.diffInHour = (diffInSec / 60 / 60).toFixed(2)
+    }
+  }
+  return history
+}
+
+const calculateTotals = (issues: any[]) => {
+  const calculate = (type: string) => {
+    return issues.reduce((aggr: number, issue: any) => {
+      if (issue.type === type) {
+        aggr++
+      }
+      return aggr
+    }, 0)
+  }
+  const totalSubtasks = calculate('Sub-task')
+  const totalBugs = calculate('Bug')
+  const totalStories = calculate('Story')
+  const totalTasks = calculate('Task')
+  return {
+    totalStories,
+    totalTasks,
+    totalBugs,
+    totalSubtasks,
+  }
+}
+
 const getAllIssuesForSprint = async (sprintId: string) => {
   try {
     const jql = `project = 'BDR (Bi-directional replication)' AND Sprint = ${sprintId}`
@@ -17,39 +74,7 @@ const getAllIssuesForSprint = async (sprintId: string) => {
       const {id, key, fields, changelog} = issue
       const {summary, issuetype, assignee, status, created} = fields
       const {histories} = changelog
-      const history = reverse(
-        flattenDeep(
-          histories.map((hist: any) => {
-            return hist.items
-              .filter((item: any) => {
-                return item.field === 'status'
-              })
-              .map((item: any) => {
-                return {
-                  created: hist.created,
-                  from: item.fromString,
-                  to: item.toString,
-                  fromId: item.from,
-                  toId: item.to,
-                }
-              })
-          }),
-        ),
-      )
-
-      for (let i = 0; i < history.length; i++) {
-        const lastIndex = i - 1
-        if (lastIndex >= 0) {
-          const lastHist = history[lastIndex] as any
-          const currentHist = history[i] as any
-          const lastCreated = new Date(lastHist.created)
-          const currentCreated = new Date(currentHist.created)
-          const diffInSec = differenceInSeconds(currentCreated, lastCreated)
-          currentHist.diffInMin = (diffInSec / 60).toFixed(2)
-          currentHist.diffInSec = diffInSec.toFixed(2)
-          currentHist.diffInHour = (diffInSec / 60 /60).toFixed(2)
-        }
-      }
+      const history = transformHistory(histories)
       return {
         id,
         key,
@@ -62,16 +87,17 @@ const getAllIssuesForSprint = async (sprintId: string) => {
       }
     })
 
-    const totalSubtasks = issuesLite.reduce((aggr: number, issue: any) => { 
-      if (issue.type === 'Sub-task') {
-        aggr++
-      }
-      return aggr
-    }, 0)
+    // const totalSubtasks = issuesLite.reduce((aggr: number, issue: any) => {
+    //   if (issue.type === 'Sub-task') {
+    //     aggr++
+    //   }
+    //   return aggr
+    // }, 0)
+    const moreTotals = calculateTotals(issuesLite)
 
     return {
       total,
-      totalSubtasks,
+      ...moreTotals,
       issues: issuesLite,
     }
   } catch (e) {
