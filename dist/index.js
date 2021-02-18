@@ -96,6 +96,8 @@ exports.getAllIssuesForSprint = getAllIssuesForSprint;
 const initialize = () => {
     const jiraApiToken = process.env['JIRA_API_TOKEN'];
     const jiraApiInfo = process.env['JIRA_BASE_URL'] ? process.env['JIRA_BASE_URL'].split(':') : null;
+    console.log('jira api info = ', jiraApiToken);
+    console.log('url = ', jiraApiInfo);
     if (jiraApiInfo) {
         const jiraConfig = {
             protocol: jiraApiInfo[0],
