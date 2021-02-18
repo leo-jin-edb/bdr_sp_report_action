@@ -9,7 +9,7 @@ const getAllIssuesForSprint = async (sprintId: string) => {
     fields: ['issuekey', 'summary', 'status', 'assignee', 'created', 'sprint.name', 'sprint.id'],
     expand: ['changelog'],
   })
-  console.log('hello = ', response)
+  console.log('hello = ', JSON.stringify(response))
   return response
 }
 

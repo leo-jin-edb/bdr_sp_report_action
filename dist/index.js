@@ -91,7 +91,7 @@ const getAllIssuesForSprint = (sprintId) => __awaiter(void 0, void 0, void 0, fu
         fields: ['issuekey', 'summary', 'status', 'assignee', 'created', 'sprint.name', 'sprint.id'],
         expand: ['changelog'],
     });
-    console.log('hello = ', response);
+    console.log('hello = ', JSON.stringify(response));
     return response;
 });
 exports.getAllIssuesForSprint = getAllIssuesForSprint;
