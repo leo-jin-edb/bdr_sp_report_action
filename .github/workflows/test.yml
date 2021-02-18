@@ -27,4 +27,4 @@ jobs:
           milliseconds: 1000
         env:
           JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
-          JIRA_BASE_URL: "https://edbtest.atlassian.net"
+          JIRA_BASE_URL: "https://enterprisedb.atlassian.net"
