@@ -22,7 +22,6 @@ jobs:
       - uses: actions/checkout@v2
       - run: |
           ls -la
-      - run: pwd
       - uses: ./
         with:
           milliseconds: 1000
