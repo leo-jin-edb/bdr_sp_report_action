@@ -24,7 +24,7 @@ const initialize = () => {
       protocol: jiraApiInfo[0],
       host: jiraApiInfo[1].substring(2),
       username: 'leo.jin@enterprisedb.com',
-      password: jiraApiToken,
+      password: '3dIgsWKrsojBYLizqg9u727E',
       apiVersion: 'latest',
       strictSSL: true,
     }
