@@ -4,6 +4,7 @@ let jiraApi: JiraClient
 
 const getAllIssuesForSprint = async (sprintId: string) => {
   const jql = `project = 'BDR (Bi-directional replication)' AND Sprint = ${sprintId}`
+  console.log('jql = ', jql)
   const response = await jiraApi.searchJira(jql, {
     fields: ['issuekey', 'summary', 'status', 'assignee', 'created', 'sprint.name', 'sprint.id'],
     expand: ['changelog'],
