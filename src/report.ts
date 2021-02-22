@@ -3,8 +3,9 @@ import {flattenDeep, reverse} from 'lodash'
 import {differenceInSeconds} from 'date-fns'
 
 let jiraApi: JiraClient
+const boardId = '316'
 
-const transformHistory = (histories: any[]) => {
+const _transformHistory = (histories: any[]) => {
   const history = reverse(
     flattenDeep(
       histories.map((hist: any) => {
@@ -40,7 +41,7 @@ const transformHistory = (histories: any[]) => {
   return history
 }
 
-const calculateTotals = (issues: any[]) => {
+const _calculateTotals = (issues: any[]) => {
   const calculate = (type: string) => {
     return issues.reduce((aggr: number, issue: any) => {
       if (issue.type === type) {
@@ -74,7 +75,7 @@ const getAllIssuesForSprint = async (sprintId: string) => {
       const {id, key, fields, changelog} = issue
       const {summary, issuetype, assignee, status, created} = fields
       const {histories} = changelog
-      const history = transformHistory(histories)
+      const history = _transformHistory(histories)
       return {
         id,
         key,
@@ -86,15 +87,7 @@ const getAllIssuesForSprint = async (sprintId: string) => {
         history,
       }
     })
-
-    // const totalSubtasks = issuesLite.reduce((aggr: number, issue: any) => {
-    //   if (issue.type === 'Sub-task') {
-    //     aggr++
-    //   }
-    //   return aggr
-    // }, 0)
-    const moreTotals = calculateTotals(issuesLite)
-
+    const moreTotals = _calculateTotals(issuesLite)
     return {
       total,
       ...moreTotals,
@@ -105,10 +98,31 @@ const getAllIssuesForSprint = async (sprintId: string) => {
   }
 }
 
-const initialize = () => {
+const getSprint = async (sprintId: string) => {
+  const listSprints = await jiraApi.listSprints(boardId)
+  const {sprints} = listSprints
+  const sprint = sprints.find((sp: any) => sp.id.toString() === sprintId)
+  if (sprint) {
+    const issues = await getAllIssuesForSprint(sprint.id)
+    return {
+      sprint,
+      issues,
+    }
+  } else {
+    throw `sprint with id "${sprintId}" is not found`
+  }
+}
+
+const getActiveSprints = async () => {
+  const board = await jiraApi.getBoard(boardId)
+  // TODO: need to find a better way to get the last sprint
+  const sprints = await jiraApi.getAllSprints(boardId, undefined, undefined, 'active')
+  return sprints.values
+}
+
+const _initialize = () => {
   const jiraApiToken = process.env['JIRA_API_TOKEN']
   const jiraApiInfo = process.env['JIRA_BASE_URL'] ? process.env['JIRA_BASE_URL'].split(':') : null
-  console.log(jiraApiInfo)
   if (jiraApiInfo) {
     const jiraConfig = {
       protocol: jiraApiInfo[0],
@@ -124,6 +138,6 @@ const initialize = () => {
   }
 }
 
-initialize()
+_initialize()
 
-export {getAllIssuesForSprint}
+export {getAllIssuesForSprint, getActiveSprints, getSprint}
