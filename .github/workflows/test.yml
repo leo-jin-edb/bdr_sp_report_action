@@ -1,11 +1,12 @@
 name: 'build-test'
 on: # rebuild any PRs and main branch changes
-  pull_request:
+  # pull_request:
+  repository_dispatch:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-      - 'releases/*'
+  # push:
+  #   branches:
+  #     - main
+  #     - 'releases/*'
 
 jobs:
   # build: # make sure build/ci work properly
@@ -27,4 +28,4 @@ jobs:
           milliseconds: 1000
         env:
           JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
-          JIRA_BASE_URL: "https://enterprisedb.atlassian.net"
+          JIRA_BASE_URL: 'https://enterprisedb.atlassian.net'
