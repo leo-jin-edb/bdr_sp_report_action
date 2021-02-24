@@ -2,7 +2,6 @@ import {google as goog, Auth, drive_v3, sheets_v4} from 'googleapis'
 import {info, error} from '@actions/core'
 import {getSprint} from './report'
 import {snakeCase} from 'lodash'
-import {sheets} from 'googleapis/build/src/apis/sheets'
 
 let jwtClient: Auth.JWT
 let gdrive: drive_v3.Drive
@@ -27,8 +26,8 @@ const _createReport = async (reportName: string) => {
   return spreadsheetId
 }
 
-const _findReportFolder = async () => {
-  const folderQuery = `mimeType='application/vnd.google-apps.folder' and name='Ops_reporting'`
+const _findReportFolder = async (folderName: string) => {
+  const folderQuery = `mimeType='application/vnd.google-apps.folder' and name='${folderName}'`
   const folderRes = await gdrive.files.list({
     q: folderQuery,
   })
@@ -51,7 +50,7 @@ const _findReport = async (reportName: string) => {
   return undefined
 }
 
-const _shareAndMoveSheet = async (sheetId: string, reportId: string, shareWith: string) => {
+const _shareAndMoveSheet = async (sheetId: string, folderId: string, shareWith: string) => {
   const drivePermissionResource = {
     resource: {
       type: 'user',
@@ -62,24 +61,105 @@ const _shareAndMoveSheet = async (sheetId: string, reportId: string, shareWith: 
     fields: 'id',
   }
   await gdrive.permissions.create(drivePermissionResource)
-  return await gdrive.files.update({
+  info(`Sheet was shared with user ${shareWith}`)
+  const moveRes = await gdrive.files.update({
     fileId: sheetId,
-    addParents: reportId,
+    addParents: folderId,
     fields: `id, parents`,
+  })
+  info(`Sheet with id "${sheetId}" have moved to folder with id "${folderId}"`)
+  return moveRes
+}
+
+const _populateReport = async (sheetId: string, payload: any) => {
+  const sheetData = [] as any
+  const reportHeader = [
+    'Ticket Key',
+    'Type',
+    'Assignee',
+    'Summary',
+    'Status',
+    'In Progress (minutes)',
+    'In Review (minutes)',
+    'In Testing (minutes)',
+  ]
+  const issues = payload.issues as any[]
+  sheetData.push(reportHeader)
+  if (issues && issues.length > 0) {
+    issues.forEach((issue: any) => {
+      const history = issue.history as any[]
+      let inReview = '0',
+        inProgress = '0',
+        inTesting = '0'
+      history.forEach((hist: any) => {
+        const {from, to, diffInMin} = hist
+        if (diffInMin && diffInMin !== '') {
+          if (from === 'In Progress') {
+            inProgress = diffInMin
+          }
+          if (from === 'In Review') {
+            inReview = diffInMin
+          }
+          if (from === 'In Testing') {
+            inTesting = diffInMin
+          }
+        }
+      })
+      sheetData.push([
+        issue.key,
+        issue.type,
+        issue.assignee,
+        issue.summary,
+        issue.status,
+        inProgress,
+        inReview,
+        inTesting,
+      ])
+    })
+  }
+  await gsheets.spreadsheets.values.batchUpdate({
+    spreadsheetId: sheetId,
+    requestBody: {
+      valueInputOption: 'USER_ENTERED',
+      data: [
+        {
+          majorDimension: 'ROWS',
+          range: 'Sheet1!A:H',
+          values: sheetData,
+        },
+      ],
+    },
+  })
+
+  const totalData = []
+  totalData.push(['Total Stories', 'Total Tasks', 'Total Bugs', 'Total Sub-tasks'])
+  totalData.push([payload.totalStories, payload.totalTasks, payload.totalBugs, payload.totalSubtasks])
+
+  await gsheets.spreadsheets.values.batchUpdate({
+    spreadsheetId: sheetId,
+    requestBody: {
+      valueInputOption: 'USER_ENTERED',
+      data: [
+        {
+          majorDimension: 'ROWS',
+          range: `Sheet1!J:M`,
+          values: totalData,
+        },
+      ],
+    },
   })
 }
 
 const writeData = async (payload: any) => {
-  console.log('write data called')
   // get sprint based on id
   const sprintInfo = await getSprint(sprintId)
   const {sprint, issues} = sprintInfo
   const reportName = `${sprint.id}_${snakeCase(sprint.name)}`
-  console.log('report name = ', reportName)
+  const reportFolderName = `Ops_reporting`
+  const reportAdminEmail = 'leo.jin@enterprisedb.com'
   try {
-    const reportFolder = await _findReportFolder()
+    const reportFolder = await _findReportFolder(reportFolderName)
     if (reportFolder) {
-      console.log(reportFolder)
       const report = await _findReport(reportName)
       if (report) {
         // delete if found
@@ -89,9 +169,14 @@ const writeData = async (payload: any) => {
         })
       }
       const spreadsheetId = (await _createReport(reportName)) as string
-      await _shareAndMoveSheet(spreadsheetId, reportFolder.id as string, 'leo.jin@enterprisedb.com')
+      await _shareAndMoveSheet(spreadsheetId, reportFolder.id as string, reportAdminEmail)
+      await _populateReport(spreadsheetId, payload)
+    } else {
+      throw `Reporting folder with name "${reportFolderName}" was not found`
     }
-  } catch (e) {}
+  } catch (e) {
+    error(e)
+  }
 }
 
 const initialize = () => {

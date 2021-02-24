@@ -1,0 +1,1215 @@
+{
+  "total": 32,
+  "totalStories": 0,
+  "totalTasks": 8,
+  "totalBugs": 1,
+  "totalSubtasks": 23,
+  "issues": [
+    {
+      "id": "106857",
+      "key": "BDR-135",
+      "type": "Bug",
+      "summary": "Fix incompatibility in client response between 3.6 and 3.7",
+      "assignee": "pavan.deolasee@enterprisedb.com",
+      "status": "Done",
+      "created": "2021-02-10T05:38:19.333-0500",
+      "history": [
+        {
+          "created": "2021-02-11T09:12:34.504-0500",
+          "from": "Backlog",
+          "to": "In Testing",
+          "fromId": "10300",
+          "toId": "11502"
+        },
+        {
+          "created": "2021-02-11T09:12:39.479-0500",
+          "from": "In Testing",
+          "to": "Done",
+          "fromId": "11502",
+          "toId": "10001",
+          "diffInMin": "0.07",
+          "diffInSec": "4.00",
+          "diffInHour": "0.00"
+        }
+      ]
+    },
+    {
+      "id": "106754",
+      "key": "BDR-130",
+      "type": "Sub-task",
+      "summary": "Fix a bug where \"kv_data\" is not included in the snapshot created by 3.7 for 3.6",
+      "assignee": "pavan.deolasee@enterprisedb.com",
+      "status": "Done",
+      "created": "2021-02-09T07:22:51.791-0500",
+      "history": [
+        {
+          "created": "2021-02-09T23:36:21.917-0500",
+          "from": "Backlog",
+          "to": "In Progress",
+          "fromId": "10300",
+          "toId": "3"
+        },
+        {
+          "created": "2021-02-10T06:32:16.983-0500",
+          "from": "In Progress",
+          "to": "In Review",
+          "fromId": "3",
+          "toId": "10401",
+          "diffInMin": "415.92",
+          "diffInSec": "24955.00",
+          "diffInHour": "6.93"
+        },
+        {
+          "created": "2021-02-10T06:32:21.431-0500",
+          "from": "In Review",
+          "to": "In Testing",
+          "fromId": "10401",
+          "toId": "11502",
+          "diffInMin": "0.07",
+          "diffInSec": "4.00",
+          "diffInHour": "0.00"
+        },
+        {
+          "created": "2021-02-10T06:34:09.399-0500",
+          "from": "In Testing",
+          "to": "Done",
+          "fromId": "11502",
+          "toId": "10001",
+          "diffInMin": "1.78",
+          "diffInSec": "107.00",
+          "diffInHour": "0.03"
+        }
+      ]
+    },
+    {
+      "id": "106745",
+      "key": "BDR-129",
+      "type": "Sub-task",
+      "summary": "Provision failure in AV machinery",
+      "assignee": "gianni.ciolli@enterprisedb.com",
+      "status": "Done",
+      "created": "2021-02-09T06:50:24.442-0500",
+      "history": [
+        {
+          "created": "2021-02-09T07:28:35.872-0500",
+          "from": "Backlog",
+          "to": "In Testing",
+          "fromId": "10300",
+          "toId": "11502"
+        },
+        {
+          "created": "2021-02-09T07:38:01.899-0500",
+          "from": "In Testing",
+          "to": "Done",
+          "fromId": "11502",
+          "toId": "10001",
+          "diffInMin": "9.43",
+          "diffInSec": "566.00",
+          "diffInHour": "0.16"
+        }
+      ]
+    },
+    {
+      "id": "106723",
+      "key": "BDR-128",
+      "type": "Sub-task",
+      "summary": "HTML docs of BDR show wrong version",
+      "assignee": "bharat.telange@enterprisedb.com",
+      "status": "Done",
+      "created": "2021-02-09T03:35:42.516-0500",
+      "history": [
+        {
+          "created": "2021-02-09T04:06:14.618-0500",
+          "from": "Backlog",
+          "to": "In Progress",
+          "fromId": "10300",
+          "toId": "3"
+        },
+        {
+          "created": "2021-02-09T04:31:34.700-0500",
+          "from": "In Progress",
+          "to": "In Testing",
+          "fromId": "3",
+          "toId": "11502",
+          "diffInMin": "25.33",
+          "diffInSec": "1520.00",
+          "diffInHour": "0.42"
+        },
+        {
+          "created": "2021-02-09T04:59:54.204-0500",
+          "from": "In Testing",
+          "to": "Done",
+          "fromId": "11502",
+          "toId": "10001",
+          "diffInMin": "28.32",
+          "diffInSec": "1699.00",
+          "diffInHour": "0.47"
+        }
+      ]
+    },
+    {
+      "id": "106707",
+      "key": "BDR-125",
+      "type": "Sub-task",
+      "summary": "Is 'Release is Scheduled' mail sent to ACI (two business days before release)?",
+      "assignee": "pallavi.sontakke@enterprisedb.com",
+      "status": "Done",
+      "created": "2021-02-09T00:32:09.825-0500",
+      "history": [
+        {
+          "created": "2021-02-09T00:32:15.643-0500",
+          "from": "Backlog",
+          "to": "In Progress",
+          "fromId": "10300",
+          "toId": "3"
+        },
+        {
+          "created": "2021-02-10T00:15:08.277-0500",
+          "from": "In Progress",
+          "to": "In Testing",
+          "fromId": "3",
+          "toId": "11502",
+          "diffInMin": "1422.87",
+          "diffInSec": "85372.00",
+          "diffInHour": "23.71"
+        },
+        {
+          "created": "2021-02-10T00:15:10.753-0500",
+          "from": "In Testing",
+          "to": "Done",
+          "fromId": "11502",
+          "toId": "10001",
+          "diffInMin": "0.03",
+          "diffInSec": "2.00",
+          "diffInHour": "0.00"
+        }
+      ]
+    },
+    {
+      "id": "106705",
+      "key": "BDR-124",
+      "type": "Sub-task",
+      "summary": "Add a read-only or a dry-run option to read exported snapshot without actually restoring it",
+      "assignee": "pavan.deolasee@enterprisedb.com",
+      "status": "Done",
+      "created": "2021-02-09T00:09:37.695-0500",
+      "history": [
+        {
+          "created": "2021-02-10T00:22:08.867-0500",
+          "from": "Backlog",
+          "to": "In Progress",
+          "fromId": "10300",
+          "toId": "3"
+        },
+        {
+          "created": "2021-02-10T06:32:13.371-0500",
+          "from": "In Progress",
+          "to": "In Review",
+          "fromId": "3",
+          "toId": "10401",
+          "diffInMin": "370.07",
+          "diffInSec": "22204.00",
+          "diffInHour": "6.17"
+        },
+        {
+          "created": "2021-02-10T23:34:49.032-0500",
+          "from": "In Review",
+          "to": "In Testing",
+          "fromId": "10401",
+          "toId": "11502",
+          "diffInMin": "1022.58",
+          "diffInSec": "61355.00",
+          "diffInHour": "17.04"
+        },
+        {
+          "created": "2021-02-10T23:35:04.283-0500",
+          "from": "In Testing",
+          "to": "Done",
+          "fromId": "11502",
+          "toId": "10001",
+          "diffInMin": "0.25",
+          "diffInSec": "15.00",
+          "diffInHour": "0.00"
+        }
+      ]
+    },
+    {
+      "id": "106637",
+      "key": "BDR-115",
+      "type": "Sub-task",
+      "summary": "Are things working sufficiently fine for performance tests for BDR 3.6.25?",
+      "assignee": "oliver.riggs@enterprisedb.com",
+      "status": "Done",
+      "created": "2021-02-08T04:08:53.930-0500",
+      "history": [
+        {
+          "created": "2021-02-09T10:10:05.823-0500",
+          "from": "Backlog",
+          "to": "In Testing",
+          "fromId": "10300",
+          "toId": "11502"
+        },
+        {
+          "created": "2021-02-10T11:28:33.711-0500",
+          "from": "In Testing",
+          "to": "Done",
+          "fromId": "11502",
+          "toId": "10001",
+          "diffInMin": "1518.45",
+          "diffInSec": "91107.00",
+          "diffInHour": "25.31"
+        }
+      ]
+    },
+    {
+      "id": "106627",
+      "key": "BDR-113",
+      "type": "Sub-task",
+      "summary": "Do regression/TAP/isolation tests on CI integration-tests/parallel-test job (on PG 11/ 2ndQ PG 11) pass reasonably ",
+      "assignee": "pallavi.sontakke@enterprisedb.com",
+      "status": "Done",
+      "created": "2021-02-08T02:56:36.224-0500",
+      "history": [
+        {
+          "created": "2021-02-08T02:58:39.113-0500",
+          "from": "Backlog",
+          "to": "In Progress",
+          "fromId": "10300",
+          "toId": "3"
+        },
+        {
+          "created": "2021-02-08T23:55:47.815-0500",
+          "from": "In Progress",
+          "to": "In Testing",
+          "fromId": "3",
+          "toId": "11502",
+          "diffInMin": "1257.13",
+          "diffInSec": "75428.00",
+          "diffInHour": "20.95"
+        },
+        {
+          "created": "2021-02-12T00:50:28.367-0500",
+          "from": "In Testing",
+          "to": "Done",
+          "fromId": "11502",
+          "toId": "10001",
+          "diffInMin": "4374.67",
+          "diffInSec": "262480.00",
+          "diffInHour": "72.91"
+        }
+      ]
+    },
+    {
+      "id": "106616",
+      "key": "BDR-112",
+      "type": "Sub-task",
+      "summary": "With BDR 3.6 & 2ndQ PG 11 , latest code, regression tests `postinit_local_state, postjoin_local_state` are failing. ",
+      "assignee": "vinit.amrutkar@enterprisedb.com",
+      "status": "Done",
+      "created": "2021-02-08T01:00:51.735-0500",
+      "history": [
+        {
+          "created": "2021-02-08T08:00:40.826-0500",
+          "from": "Backlog",
+          "to": "In Progress",
+          "fromId": "10300",
+          "toId": "3"
+        },
+        {
+          "created": "2021-02-08T08:01:34.524-0500",
+          "from": "In Progress",
+          "to": "In Testing",
+          "fromId": "3",
+          "toId": "11502",
+          "diffInMin": "0.88",
+          "diffInSec": "53.00",
+          "diffInHour": "0.01"
+        },
+        {
+          "created": "2021-02-10T02:48:58.279-0500",
+          "from": "In Testing",
+          "to": "Done",
+          "fromId": "11502",
+          "toId": "10001",
+          "diffInMin": "2567.38",
+          "diffInSec": "154043.00",
+          "diffInHour": "42.79"
+        }
+      ]
+    },
+    {
+      "id": "106453",
+      "key": "BDR-104",
+      "type": "Sub-task",
+      "summary": "In pglogical 3.6 SE pipeline, RPMs smoke-tests for PG 9.4 are failing.",
+      "assignee": null,
+      "status": "Abandoned",
+      "created": "2021-02-04T04:53:39.762-0500",
+      "history": [
+        {
+          "created": "2021-02-05T04:11:33.532-0500",
+          "from": "Backlog",
+          "to": "In Progress",
+          "fromId": "10300",
+          "toId": "3"
+        },
+        {
+          "created": "2021-02-05T04:11:38.588-0500",
+          "from": "In Progress",
+          "to": "In Testing",
+          "fromId": "3",
+          "toId": "11502",
+          "diffInMin": "0.08",
+          "diffInSec": "5.00",
+          "diffInHour": "0.00"
+        },
+        {
+          "created": "2021-02-05T04:11:41.918-0500",
+          "from": "In Testing",
+          "to": "Abandoned",
+          "fromId": "11502",
+          "toId": "11674",
+          "diffInMin": "0.05",
+          "diffInSec": "3.00",
+          "diffInHour": "0.00"
+        }
+      ]
+    },
+    {
+      "id": "106452",
+      "key": "BDR-103",
+      "type": "Sub-task",
+      "summary": "In pglogical 3.6 SE & BDR 3.7 SE pipeline, all Centos8 smoke-tests are failing.",
+      "assignee": "pallavi.sontakke@enterprisedb.com",
+      "status": "Done",
+      "created": "2021-02-04T04:53:29.784-0500",
+      "history": [
+        {
+          "created": "2021-02-05T02:11:35.861-0500",
+          "from": "Backlog",
+          "to": "In Progress",
+          "fromId": "10300",
+          "toId": "3"
+        },
+        {
+          "created": "2021-02-05T04:11:59.141-0500",
+          "from": "In Progress",
+          "to": "In Testing",
+          "fromId": "3",
+          "toId": "11502",
+          "diffInMin": "120.38",
+          "diffInSec": "7223.00",
+          "diffInHour": "2.01"
+        },
+        {
+          "created": "2021-02-05T07:56:31.551-0500",
+          "from": "In Testing",
+          "to": "Done",
+          "fromId": "11502",
+          "toId": "10001",
+          "diffInMin": "224.53",
+          "diffInSec": "13472.00",
+          "diffInHour": "3.74"
+        }
+      ]
+    },
+    {
+      "id": "106430",
+      "key": "BDR-102",
+      "type": "Sub-task",
+      "summary": "Complete remaining tasks for 2ndQ PG 11.11r1.6.25 release.",
+      "assignee": "peter.eisentraut@enterprisedb.com",
+      "status": "Done",
+      "created": "2021-02-04T01:50:06.556-0500",
+      "history": [
+        {
+          "created": "2021-02-09T01:13:28.941-0500",
+          "from": "Backlog",
+          "to": "In Progress",
+          "fromId": "10300",
+          "toId": "3"
+        },
+        {
+          "created": "2021-02-11T02:30:20.512-0500",
+          "from": "In Progress",
+          "to": "In Testing",
+          "fromId": "3",
+          "toId": "11502",
+          "diffInMin": "2956.85",
+          "diffInSec": "177411.00",
+          "diffInHour": "49.28"
+        },
+        {
+          "created": "2021-02-11T02:30:23.944-0500",
+          "from": "In Testing",
+          "to": "Done",
+          "fromId": "11502",
+          "toId": "10001",
+          "diffInMin": "0.05",
+          "diffInSec": "3.00",
+          "diffInHour": "0.00"
+        },
+        {
+          "created": "2021-02-15T09:20:19.908-0500",
+          "from": "Done",
+          "to": "In Testing",
+          "fromId": "10001",
+          "toId": "11502",
+          "diffInMin": "6169.92",
+          "diffInSec": "370195.00",
+          "diffInHour": "102.83"
+        },
+        {
+          "created": "2021-02-15T09:20:25.852-0500",
+          "from": "In Testing",
+          "to": "Done",
+          "fromId": "11502",
+          "toId": "10001",
+          "diffInMin": "0.08",
+          "diffInSec": "5.00",
+          "diffInHour": "0.00"
+        }
+      ]
+    },
+    {
+      "id": "106429",
+      "key": "BDR-101",
+      "type": "Sub-task",
+      "summary": "Add release notes for pglogical & BDR 3.6.25",
+      "assignee": "petr.jelinek@enterprisedb.com",
+      "status": "Done",
+      "created": "2021-02-04T01:46:47.375-0500",
+      "history": [
+        {
+          "created": "2021-02-09T01:06:14.877-0500",
+          "from": "Backlog",
+          "to": "In Testing",
+          "fromId": "10300",
+          "toId": "11502"
+        },
+        {
+          "created": "2021-02-09T01:06:17.306-0500",
+          "from": "In Testing",
+          "to": "Done",
+          "fromId": "11502",
+          "toId": "10001",
+          "diffInMin": "0.03",
+          "diffInSec": "2.00",
+          "diffInHour": "0.00"
+        }
+      ]
+    },
+    {
+      "id": "106426",
+      "key": "BDR-100",
+      "type": "Sub-task",
+      "summary": "Pglogical 3.6 SE & EE build is failing with error : `fatal: clone of 'git@github.com:EnterpriseDB/pglogical_dump.git' into submodule path '/var/lib/jenkins/workspace/pglogical3_6-2ndqpg/pglogical3_6-2ndqpg/src/pglogical_dump' failed`",
+      "assignee": "pallavi.sontakke@enterprisedb.com",
+      "status": "Done",
+      "created": "2021-02-04T00:17:24.530-0500",
+      "history": [
+        {
+          "created": "2021-02-04T00:31:54.942-0500",
+          "from": "Backlog",
+          "to": "In Progress",
+          "fromId": "10300",
+          "toId": "3"
+        },
+        {
+          "created": "2021-02-04T04:10:17.778-0500",
+          "from": "In Progress",
+          "to": "In Testing",
+          "fromId": "3",
+          "toId": "11502",
+          "diffInMin": "218.37",
+          "diffInSec": "13102.00",
+          "diffInHour": "3.64"
+        },
+        {
+          "created": "2021-02-04T04:10:46.880-0500",
+          "from": "In Testing",
+          "to": "Done",
+          "fromId": "11502",
+          "toId": "10001",
+          "diffInMin": "0.48",
+          "diffInSec": "29.00",
+          "diffInHour": "0.01"
+        }
+      ]
+    },
+    {
+      "id": "106424",
+      "key": "BDR-99",
+      "type": "Sub-task",
+      "summary": "With BDR 3.6 & 2ndQ PG 11 , latest code, test 800_probe_points_ddl_dml_locking_remote.pl is timing out",
+      "assignee": "markus.wanner@enterprisedb.com",
+      "status": "Abandoned",
+      "created": "2021-02-03T23:52:14.348-0500",
+      "history": [
+        {
+          "created": "2021-02-04T10:16:26.344-0500",
+          "from": "Backlog",
+          "to": "In Progress",
+          "fromId": "10300",
+          "toId": "3"
+        },
+        {
+          "created": "2021-02-10T02:50:08.216-0500",
+          "from": "In Progress",
+          "to": "In Testing",
+          "fromId": "3",
+          "toId": "11502",
+          "diffInMin": "8193.68",
+          "diffInSec": "491621.00",
+          "diffInHour": "136.56"
+        },
+        {
+          "created": "2021-02-10T02:50:11.186-0500",
+          "from": "In Testing",
+          "to": "Abandoned",
+          "fromId": "11502",
+          "toId": "11674",
+          "diffInMin": "0.03",
+          "diffInSec": "2.00",
+          "diffInHour": "0.00"
+        }
+      ]
+    },
+    {
+      "id": "106423",
+      "key": "BDR-98",
+      "type": "Sub-task",
+      "summary": "With BDR 3.6 & 2ndQ PG 11 , latest code, test 017_concurrent_join_diff_upstream_withload.pl is timing out",
+      "assignee": "vinit.amrutkar@enterprisedb.com",
+      "status": "Abandoned",
+      "created": "2021-02-03T23:52:04.789-0500",
+      "history": [
+        {
+          "created": "2021-02-05T01:33:58.185-0500",
+          "from": "Backlog",
+          "to": "In Testing",
+          "fromId": "10300",
+          "toId": "11502"
+        },
+        {
+          "created": "2021-02-05T01:34:01.603-0500",
+          "from": "In Testing",
+          "to": "Abandoned",
+          "fromId": "11502",
+          "toId": "11674",
+          "diffInMin": "0.05",
+          "diffInSec": "3.00",
+          "diffInHour": "0.00"
+        }
+      ]
+    },
+    {
+      "id": "106292",
+      "key": "BDR-94",
+      "type": "Sub-task",
+      "summary": "Refactor 3.7 code for better management/readability",
+      "assignee": "pavan.deolasee@enterprisedb.com",
+      "status": "Done",
+      "created": "2021-02-03T00:22:36.495-0500",
+      "history": [
+        {
+          "created": "2021-02-03T00:22:52.767-0500",
+          "from": "Backlog",
+          "to": "In Progress",
+          "fromId": "10300",
+          "toId": "3"
+        },
+        {
+          "created": "2021-02-05T05:58:00.152-0500",
+          "from": "In Progress",
+          "to": "In Review",
+          "fromId": "3",
+          "toId": "10401",
+          "diffInMin": "3215.12",
+          "diffInSec": "192907.00",
+          "diffInHour": "53.59"
+        },
+        {
+          "created": "2021-02-09T00:08:11.484-0500",
+          "from": "In Review",
+          "to": "In Testing",
+          "fromId": "10401",
+          "toId": "11502",
+          "diffInMin": "5410.18",
+          "diffInSec": "324611.00",
+          "diffInHour": "90.17"
+        },
+        {
+          "created": "2021-02-10T07:22:24.822-0500",
+          "from": "In Testing",
+          "to": "Done",
+          "fromId": "11502",
+          "toId": "10001",
+          "diffInMin": "1874.22",
+          "diffInSec": "112453.00",
+          "diffInHour": "31.24"
+        }
+      ]
+    },
+    {
+      "id": "106223",
+      "key": "BDR-90",
+      "type": "Sub-task",
+      "summary": "Check on a local setup of BDR 3.6 & 2ndQ PG 11 , latest code, whether these tests are passing : 017_concurrent_join_diff_upstream_withload.pl & 800_probe_points_ddl_dml_locking_remote.pl",
+      "assignee": "vinit.amrutkar@enterprisedb.com",
+      "status": "Done",
+      "created": "2021-02-02T07:21:15.197-0500",
+      "history": [
+        {
+          "created": "2021-02-03T23:49:36.330-0500",
+          "from": "Backlog",
+          "to": "In Testing",
+          "fromId": "10300",
+          "toId": "11502"
+        },
+        {
+          "created": "2021-02-03T23:49:43.478-0500",
+          "from": "In Testing",
+          "to": "Done",
+          "fromId": "11502",
+          "toId": "10001",
+          "diffInMin": "0.12",
+          "diffInSec": "7.00",
+          "diffInHour": "0.00"
+        }
+      ]
+    },
+    {
+      "id": "106219",
+      "key": "BDR-89",
+      "type": "Sub-task",
+      "summary": "pglogical 3.6 SE builds are failing for PG versions lower than PG 11 with `pglogical_executor.c:709:8: note: each undeclared identifier is reported only once for each function it appears in`",
+      "assignee": "petr.jelinek@enterprisedb.com",
+      "status": "Done",
+      "created": "2021-02-02T07:03:26.549-0500",
+      "history": [
+        {
+          "created": "2021-02-03T07:28:10.659-0500",
+          "from": "Backlog",
+          "to": "In Progress",
+          "fromId": "10300",
+          "toId": "3"
+        },
+        {
+          "created": "2021-02-05T01:55:47.241-0500",
+          "from": "In Progress",
+          "to": "In Testing",
+          "fromId": "3",
+          "toId": "11502",
+          "diffInMin": "2547.60",
+          "diffInSec": "152856.00",
+          "diffInHour": "42.46"
+        },
+        {
+          "created": "2021-02-05T01:56:06.436-0500",
+          "from": "In Testing",
+          "to": "Done",
+          "fromId": "11502",
+          "toId": "10001",
+          "diffInMin": "0.32",
+          "diffInSec": "19.00",
+          "diffInHour": "0.01"
+        }
+      ]
+    },
+    {
+      "id": "106187",
+      "key": "BDR-86",
+      "type": "Sub-task",
+      "summary": "Refactor existing 3.7 and 3.6 code to adhere to the proposed changes",
+      "assignee": "pavan.deolasee@enterprisedb.com",
+      "status": "Done",
+      "created": "2021-02-02T01:17:55.213-0500",
+      "history": [
+        {
+          "created": "2021-02-08T08:37:44.409-0500",
+          "from": "Backlog",
+          "to": "In Progress",
+          "fromId": "10300",
+          "toId": "3"
+        },
+        {
+          "created": "2021-02-08T08:37:51.118-0500",
+          "from": "In Progress",
+          "to": "In Review",
+          "fromId": "3",
+          "toId": "10401",
+          "diffInMin": "0.10",
+          "diffInSec": "6.00",
+          "diffInHour": "0.00"
+        },
+        {
+          "created": "2021-02-10T07:22:46.199-0500",
+          "from": "In Review",
+          "to": "In Testing",
+          "fromId": "10401",
+          "toId": "11502",
+          "diffInMin": "2804.92",
+          "diffInSec": "168295.00",
+          "diffInHour": "46.75"
+        },
+        {
+          "created": "2021-02-10T07:22:49.252-0500",
+          "from": "In Testing",
+          "to": "Done",
+          "fromId": "11502",
+          "toId": "10001",
+          "diffInMin": "0.05",
+          "diffInSec": "3.00",
+          "diffInHour": "0.00"
+        }
+      ]
+    },
+    {
+      "id": "106186",
+      "key": "BDR-85",
+      "type": "Sub-task",
+      "summary": "Study the existing snapshot versioning mechanism and write a proposal to address it in the long term",
+      "assignee": "pavan.deolasee@enterprisedb.com",
+      "status": "Done",
+      "created": "2021-02-02T01:17:08.277-0500",
+      "history": [
+        {
+          "created": "2021-02-02T01:18:32.263-0500",
+          "from": "Backlog",
+          "to": "In Progress",
+          "fromId": "10300",
+          "toId": "3"
+        },
+        {
+          "created": "2021-02-10T07:22:58.308-0500",
+          "from": "In Progress",
+          "to": "In Review",
+          "fromId": "3",
+          "toId": "10401",
+          "diffInMin": "11884.43",
+          "diffInSec": "713066.00",
+          "diffInHour": "198.07"
+        },
+        {
+          "created": "2021-02-10T07:23:00.862-0500",
+          "from": "In Review",
+          "to": "In Testing",
+          "fromId": "10401",
+          "toId": "11502",
+          "diffInMin": "0.03",
+          "diffInSec": "2.00",
+          "diffInHour": "0.00"
+        },
+        {
+          "created": "2021-02-10T07:23:06.614-0500",
+          "from": "In Testing",
+          "to": "Done",
+          "fromId": "11502",
+          "toId": "10001",
+          "diffInMin": "0.08",
+          "diffInSec": "5.00",
+          "diffInHour": "0.00"
+        }
+      ]
+    },
+    {
+      "id": "106182",
+      "key": "BDR-83",
+      "type": "Sub-task",
+      "summary": "merge the commits in REL_11_STABLE branch after REL_11_10 tag, into 2QREL_11_STABLE_3_6 branch. Also move its version to 2ndQ PG 11.11r2ndq1.6.25.",
+      "assignee": "peter.eisentraut@enterprisedb.com",
+      "status": "Done",
+      "created": "2021-02-02T01:06:36.667-0500",
+      "history": [
+        {
+          "created": "2021-02-02T13:40:15.179-0500",
+          "from": "Backlog",
+          "to": "In Progress",
+          "fromId": "10300",
+          "toId": "3"
+        },
+        {
+          "created": "2021-02-02T13:40:43.882-0500",
+          "from": "In Progress",
+          "to": "In Testing",
+          "fromId": "3",
+          "toId": "11502",
+          "diffInMin": "0.47",
+          "diffInSec": "28.00",
+          "diffInHour": "0.01"
+        },
+        {
+          "created": "2021-02-02T13:40:55.547-0500",
+          "from": "In Testing",
+          "to": "Done",
+          "fromId": "11502",
+          "toId": "10001",
+          "diffInMin": "0.18",
+          "diffInSec": "11.00",
+          "diffInHour": "0.00"
+        }
+      ]
+    },
+    {
+      "id": "106141",
+      "key": "BDR-76",
+      "type": "Sub-task",
+      "summary": "BDR wrapper for `pglogical.alter_subscription_skip_changes_upto`",
+      "assignee": "florin.irion@enterprisedb.com",
+      "status": "Done",
+      "created": "2021-02-01T10:13:06.736-0500",
+      "history": [
+        {
+          "created": "2021-02-01T12:25:11.389-0500",
+          "from": "Backlog",
+          "to": "In Progress",
+          "fromId": "10300",
+          "toId": "3"
+        },
+        {
+          "created": "2021-02-02T10:24:08.504-0500",
+          "from": "In Progress",
+          "to": "In Review",
+          "fromId": "3",
+          "toId": "10401",
+          "diffInMin": "1318.95",
+          "diffInSec": "79137.00",
+          "diffInHour": "21.98"
+        },
+        {
+          "created": "2021-02-10T13:14:33.413-0500",
+          "from": "In Review",
+          "to": "In Testing",
+          "fromId": "10401",
+          "toId": "11502",
+          "diffInMin": "11690.40",
+          "diffInSec": "701424.00",
+          "diffInHour": "194.84"
+        },
+        {
+          "created": "2021-02-16T07:33:59.328-0500",
+          "from": "In Testing",
+          "to": "Done",
+          "fromId": "11502",
+          "toId": "10001",
+          "diffInMin": "8299.42",
+          "diffInSec": "497965.00",
+          "diffInHour": "138.32"
+        }
+      ]
+    },
+    {
+      "id": "106140",
+      "key": "BDR-75",
+      "type": "Sub-task",
+      "summary": "Analysis  on other pgl wrapper functions",
+      "assignee": "florin.irion@enterprisedb.com",
+      "status": "Done",
+      "created": "2021-02-01T10:12:34.833-0500",
+      "history": [
+        {
+          "created": "2021-02-01T10:13:31.818-0500",
+          "from": "Backlog",
+          "to": "In Progress",
+          "fromId": "10300",
+          "toId": "3"
+        },
+        {
+          "created": "2021-02-01T12:25:00.788-0500",
+          "from": "In Progress",
+          "to": "In Testing",
+          "fromId": "3",
+          "toId": "11502",
+          "diffInMin": "131.47",
+          "diffInSec": "7888.00",
+          "diffInHour": "2.19"
+        },
+        {
+          "created": "2021-02-01T12:41:15.038-0500",
+          "from": "In Testing",
+          "to": "Done",
+          "fromId": "11502",
+          "toId": "10001",
+          "diffInMin": "16.23",
+          "diffInSec": "974.00",
+          "diffInHour": "0.27"
+        }
+      ]
+    },
+    {
+      "id": "106124",
+      "key": "BDR-70",
+      "type": "Task",
+      "summary": "Fix broken ddl_epoch snapshot writing in 3.7 (consensus protocol version)",
+      "assignee": "pavan.deolasee@enterprisedb.com",
+      "status": "Done",
+      "created": "2021-02-01T07:49:32.108-0500",
+      "history": [
+        {
+          "created": "2021-02-05T05:59:48.938-0500",
+          "from": "Backlog",
+          "to": "In Progress",
+          "fromId": "10300",
+          "toId": "3"
+        },
+        {
+          "created": "2021-02-11T04:45:51.520-0500",
+          "from": "In Progress",
+          "to": "In Testing",
+          "fromId": "3",
+          "toId": "11502",
+          "diffInMin": "8566.03",
+          "diffInSec": "513962.00",
+          "diffInHour": "142.77"
+        },
+        {
+          "created": "2021-02-11T04:45:54.072-0500",
+          "from": "In Testing",
+          "to": "Done",
+          "fromId": "11502",
+          "toId": "10001",
+          "diffInMin": "0.03",
+          "diffInSec": "2.00",
+          "diffInHour": "0.00"
+        }
+      ]
+    },
+    {
+      "id": "106083",
+      "key": "BDR-65",
+      "type": "Task",
+      "summary": "wal decoder is not enabled on newly joined node",
+      "assignee": "ashutosh.bapat@enterprisedb.com",
+      "status": "Done",
+      "created": "2021-02-01T00:30:30.584-0500",
+      "history": [
+        {
+          "created": "2021-02-01T00:37:40.736-0500",
+          "from": "Backlog",
+          "to": "In Progress",
+          "fromId": "10300",
+          "toId": "3"
+        },
+        {
+          "created": "2021-02-16T07:46:46.627-0500",
+          "from": "In Progress",
+          "to": "In Testing",
+          "fromId": "3",
+          "toId": "11502",
+          "diffInMin": "22029.08",
+          "diffInSec": "1321745.00",
+          "diffInHour": "367.15"
+        },
+        {
+          "created": "2021-02-16T07:46:50.091-0500",
+          "from": "In Testing",
+          "to": "Done",
+          "fromId": "11502",
+          "toId": "10001",
+          "diffInMin": "0.05",
+          "diffInSec": "3.00",
+          "diffInHour": "0.00"
+        }
+      ]
+    },
+    {
+      "id": "105946",
+      "key": "BDR-58",
+      "type": "Task",
+      "summary": "Reduce 2QPG code foot-print",
+      "assignee": "ashutosh.bapat@enterprisedb.com",
+      "status": "Done",
+      "created": "2021-01-29T00:34:20.398-0500",
+      "history": [
+        {
+          "created": "2021-02-05T06:33:54.853-0500",
+          "from": "Backlog",
+          "to": "In Progress",
+          "fromId": "10300",
+          "toId": "3"
+        },
+        {
+          "created": "2021-02-16T07:46:36.300-0500",
+          "from": "In Progress",
+          "to": "In Testing",
+          "fromId": "3",
+          "toId": "11502",
+          "diffInMin": "15912.68",
+          "diffInSec": "954761.00",
+          "diffInHour": "265.21"
+        },
+        {
+          "created": "2021-02-16T07:46:39.135-0500",
+          "from": "In Testing",
+          "to": "Done",
+          "fromId": "11502",
+          "toId": "10001",
+          "diffInMin": "0.03",
+          "diffInSec": "2.00",
+          "diffInHour": "0.00"
+        }
+      ]
+    },
+    {
+      "id": "105729",
+      "key": "BDR-49",
+      "type": "Task",
+      "summary": "Add BDR wrapper for `pglogical.alter_subscription_skip_changes_upto`",
+      "assignee": "florin.irion@enterprisedb.com",
+      "status": "Done",
+      "created": "2021-01-27T03:51:40.118-0500",
+      "history": [
+        {
+          "created": "2021-02-01T10:10:47.669-0500",
+          "from": "Backlog",
+          "to": "In Progress",
+          "fromId": "10300",
+          "toId": "3"
+        },
+        {
+          "created": "2021-02-16T07:43:04.196-0500",
+          "from": "In Progress",
+          "to": "In Testing",
+          "fromId": "3",
+          "toId": "11502",
+          "diffInMin": "21452.27",
+          "diffInSec": "1287136.00",
+          "diffInHour": "357.54"
+        },
+        {
+          "created": "2021-02-16T07:43:06.342-0500",
+          "from": "In Testing",
+          "to": "Done",
+          "fromId": "11502",
+          "toId": "10001",
+          "diffInMin": "0.03",
+          "diffInSec": "2.00",
+          "diffInHour": "0.00"
+        }
+      ]
+    },
+    {
+      "id": "105625",
+      "key": "BDR-48",
+      "type": "Task",
+      "summary": "BDR 3.6.25 preparation",
+      "assignee": "pallavi.sontakke@enterprisedb.com",
+      "status": "Done",
+      "created": "2021-01-26T08:28:41.696-0500",
+      "history": [
+        {
+          "created": "2021-02-04T00:46:55.016-0500",
+          "from": "Backlog",
+          "to": "In Progress",
+          "fromId": "10300",
+          "toId": "3"
+        },
+        {
+          "created": "2021-02-12T01:14:40.031-0500",
+          "from": "In Progress",
+          "to": "In Testing",
+          "fromId": "3",
+          "toId": "11502",
+          "diffInMin": "11547.75",
+          "diffInSec": "692865.00",
+          "diffInHour": "192.46"
+        },
+        {
+          "created": "2021-02-12T01:14:50.196-0500",
+          "from": "In Testing",
+          "to": "Done",
+          "fromId": "11502",
+          "toId": "10001",
+          "diffInMin": "0.17",
+          "diffInSec": "10.00",
+          "diffInHour": "0.00"
+        }
+      ]
+    },
+    {
+      "id": "105608",
+      "key": "BDR-44",
+      "type": "Task",
+      "summary": "Async commit for CAMO",
+      "assignee": "markus.wanner@enterprisedb.com",
+      "status": "Done",
+      "created": "2021-01-26T03:17:44.720-0500",
+      "history": [
+        {
+          "created": "2021-02-01T08:43:06.415-0500",
+          "from": "Backlog",
+          "to": "In Testing",
+          "fromId": "10300",
+          "toId": "11502"
+        },
+        {
+          "created": "2021-02-01T08:43:15.020-0500",
+          "from": "In Testing",
+          "to": "Done",
+          "fromId": "11502",
+          "toId": "10001",
+          "diffInMin": "0.13",
+          "diffInSec": "8.00",
+          "diffInHour": "0.00"
+        }
+      ]
+    },
+    {
+      "id": "105041",
+      "key": "BDR-33",
+      "type": "Task",
+      "summary": "Make consensus snapshot versioning declarative",
+      "assignee": "pavan.deolasee@enterprisedb.com",
+      "status": "Done",
+      "created": "2021-01-18T05:01:55.235-0500",
+      "history": [
+        {
+          "created": "2021-02-11T04:45:43.369-0500",
+          "from": "Backlog",
+          "to": "In Testing",
+          "fromId": "10300",
+          "toId": "11502"
+        },
+        {
+          "created": "2021-02-11T04:45:46.377-0500",
+          "from": "In Testing",
+          "to": "Done",
+          "fromId": "11502",
+          "toId": "10001",
+          "diffInMin": "0.05",
+          "diffInSec": "3.00",
+          "diffInHour": "0.00"
+        }
+      ]
+    },
+    {
+      "id": "104474",
+      "key": "BDR-23",
+      "type": "Task",
+      "summary": "PGL DDL replication preprocess call should override internal logic",
+      "assignee": "rahila.syed@enterprisedb.com",
+      "status": "Done",
+      "created": "2021-01-11T08:49:23.375-0500",
+      "history": [
+        {
+          "created": "2021-01-20T23:18:27.274-0500",
+          "from": "Backlog",
+          "to": "In Progress",
+          "fromId": "10300",
+          "toId": "3"
+        },
+        {
+          "created": "2021-01-28T01:07:53.529-0500",
+          "from": "In Progress",
+          "to": "Done",
+          "fromId": "3",
+          "toId": "10001",
+          "diffInMin": "10189.43",
+          "diffInSec": "611366.00",
+          "diffInHour": "169.82"
+        }
+      ]
+    }
+  ]
+}
