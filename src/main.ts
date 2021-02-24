@@ -1,17 +1,16 @@
 import * as core from '@actions/core'
-import {wait} from './wait'
 import {getAllIssuesForSprint} from './report'
-import {writeFileSync} from 'fs'
 import * as github from '@actions/github'
+import {writeData} from './google-sheets-connector'
+import {info} from '@actions/core'
 
 async function run(): Promise<void> {
   try {
     const {client_payload} = github.context.payload
-    // const data = await getAllIssuesForSprint('1345')
-    writeFileSync(
-      '/Users/leo.jin/development/tools/reporting/bdr_sp_report_action/jira_response.json',
-      JSON.stringify(client_payload, null, 2),
-    )
+    const {sprintId} = client_payload
+    info(`kick off report generation for sprint "${sprintId}"`)
+    const sprintData = await getAllIssuesForSprint(sprintId)
+    await writeData(sprintData)
   } catch (error) {
     core.setFailed(error.message)
   }
