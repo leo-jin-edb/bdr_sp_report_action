@@ -15,5 +15,7 @@ jobs:
         with:
           milliseconds: 1000
         env:
+          GOOG_SA_EMAIL: ${{ secrets.GOOG_SA_EMAIL }}
+          GOOG_SA_KEY: ${{ secrets.GOOG_SA_KEY }}
           JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
           JIRA_BASE_URL: 'https://enterprisedb.atlassian.net'
