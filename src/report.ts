@@ -1,6 +1,7 @@
 import JiraClient from 'jira-client'
 import {flattenDeep, reverse} from 'lodash'
 import {differenceInSeconds} from 'date-fns'
+import {error} from '@actions/core'
 
 let jiraApi: JiraClient
 const boardId = '316'
@@ -94,7 +95,7 @@ const getAllIssuesForSprint = async (sprintId: string) => {
       issues: issuesLite,
     }
   } catch (e) {
-    console.log(e)
+    error(e)
   }
 }
 

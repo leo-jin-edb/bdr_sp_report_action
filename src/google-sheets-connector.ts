@@ -155,7 +155,6 @@ const writeData = async (payload: any, sprintId: string) => {
   const sprintInfo = await getSprint(sprintId)
   const {sprint, issues} = sprintInfo
   const reportName = `${sprint.id}_${snakeCase(sprint.name)}`
-  console.log(JSON.stringify(sprintInfo))
   const reportFolderName = `Ops_reporting`
   const reportAdminEmail = 'leo.jin@enterprisedb.com'
   try {
