@@ -10,7 +10,7 @@ async function run(): Promise<void> {
     const {sprintId} = client_payload
     info(`kick off report generation for sprint "${sprintId}"`)
     const sprintData = await getAllIssuesForSprint(sprintId)
-    await writeData(sprintData)
+    await writeData(sprintData, sprintId)
   } catch (error) {
     core.setFailed(error.message)
   }

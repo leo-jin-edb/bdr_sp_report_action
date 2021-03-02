@@ -6,7 +6,7 @@ import {snakeCase} from 'lodash'
 let jwtClient: Auth.JWT
 let gdrive: drive_v3.Drive
 let gsheets: sheets_v4.Sheets
-let sprintId = '1345'
+// let sprintId = '1345'
 
 const _createReport = async (reportName: string) => {
   const createReportResource = {
@@ -150,11 +150,12 @@ const _populateReport = async (sheetId: string, payload: any) => {
   })
 }
 
-const writeData = async (payload: any) => {
+const writeData = async (payload: any, sprintId: string) => {
   // get sprint based on id
   const sprintInfo = await getSprint(sprintId)
   const {sprint, issues} = sprintInfo
   const reportName = `${sprint.id}_${snakeCase(sprint.name)}`
+  console.log(JSON.stringify(sprintInfo))
   const reportFolderName = `Ops_reporting`
   const reportAdminEmail = 'leo.jin@enterprisedb.com'
   try {

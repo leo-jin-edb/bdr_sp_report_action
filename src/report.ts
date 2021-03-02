@@ -65,6 +65,7 @@ const _calculateTotals = (issues: any[]) => {
 const getAllIssuesForSprint = async (sprintId: string) => {
   try {
     const jql = `project = 'BDR (Bi-directional replication)' AND Sprint = ${sprintId}`
+    console.log('jql = ', jql)
     const response = await jiraApi.searchJira(jql, {
       fields: ['issuekey', 'issuetype', 'summary', 'status', 'assignee', 'created', 'sprint.name', 'sprint.id'],
       expand: ['changelog'],
