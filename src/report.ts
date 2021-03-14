@@ -63,17 +63,61 @@ const _calculateTotals = (issues: any[]) => {
   }
 }
 
+const _processSprintReport = async (sprintId: string) => {
+  const payload = await jiraApi.getSprintIssues(boardId, sprintId)
+  const {completedIssues, puntedIssues, issuesCompletedInAnotherSprint, issueKeysAddedDuringSprint} = payload.contents
+  const issuesCompletedInSprint = completedIssues.reduce((aggr: any, element: any) => {
+    aggr[element.key] = element
+    return aggr
+  }, {})
+
+  Object.keys(issuesCompletedInSprint).forEach((key: string) => {
+    const v = issuesCompletedInSprint[key]
+    const addedDuringSprint = issueKeysAddedDuringSprint[key]
+    if (addedDuringSprint) {
+      issuesCompletedInSprint[key].addedDuringSprint = addedDuringSprint
+    } else {
+      issuesCompletedInSprint[key].addedDuringSprint = false
+    }
+  })
+
+  return {
+    issuesCompletedInSprint: completedIssues.reduce((aggr: any, element: any) => {
+      aggr[element.key] = element
+      return aggr
+    }, {}),
+    issuesMovedFromSprint: puntedIssues.reduce((aggr: any, element: any) => {
+      aggr[element.key] = element
+      return aggr
+    }, {}),
+    issuesCompletedInAnotherSprint: issuesCompletedInAnotherSprint.reduce((aggr: any, element: any) => {
+      aggr[element.key] = element
+      return aggr
+    }, {}),
+    sprintInfo: payload.sprint,
+  }
+}
+
 const getAllIssuesForSprint = async (sprintId: string) => {
   try {
+    // get sprint report
+    const report = await _processSprintReport(sprintId)
     const jql = `project = 'BDR (Bi-directional replication)' AND Sprint = ${sprintId}`
-    console.log('jql = ', jql)
     const response = await jiraApi.searchJira(jql, {
       fields: ['issuekey', 'issuetype', 'summary', 'status', 'assignee', 'created', 'sprint.name', 'sprint.id'],
       expand: ['changelog'],
     })
     const {total, issues} = response
+    const {issuesCompletedInSprint, issuesMovedFromSprint, sprintInfo} = report
+
     const issuesLite = issues.map((issue: any) => {
       const {id, key, fields, changelog} = issue
+      const reportRecord = issuesCompletedInSprint[key]
+      let addedDuringSprint = false
+      if (reportRecord) {
+        const {addedDuringSprint: ads} = reportRecord
+        addedDuringSprint = ads
+      } 
       const {summary, issuetype, assignee, status, created} = fields
       const {histories} = changelog
       const history = _transformHistory(histories)
@@ -81,6 +125,7 @@ const getAllIssuesForSprint = async (sprintId: string) => {
         id,
         key,
         type: issuetype.name,
+        addedDuringSprint,
         summary,
         assignee: assignee ? assignee.emailAddress : null,
         status: status.name,
@@ -93,6 +138,8 @@ const getAllIssuesForSprint = async (sprintId: string) => {
       total,
       ...moreTotals,
       issues: issuesLite,
+      issuesMovedFromSprint: Object.keys(issuesMovedFromSprint),
+      sprintInfo,
     }
   } catch (e) {
     error(e)

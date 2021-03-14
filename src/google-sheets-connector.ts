@@ -77,6 +77,7 @@ const _populateReport = async (sheetId: string, payload: any) => {
     'Ticket Key',
     'Type',
     'Assignee',
+    'Added After Sprint Start',
     'Summary',
     'Status',
     'In Progress (minutes)',
@@ -84,9 +85,14 @@ const _populateReport = async (sheetId: string, payload: any) => {
     'In Testing (minutes)',
   ]
   const issues = payload.issues as any[]
+  let totalIssuesMovedIn = 0
   sheetData.push(reportHeader)
   if (issues && issues.length > 0) {
     issues.forEach((issue: any) => {
+      const addedDuringSprint = issue.addedDuringSprint
+      if (addedDuringSprint) {
+        totalIssuesMovedIn++
+      }
       const history = issue.history as any[]
       let inReview = '0',
         inProgress = '0',
@@ -109,6 +115,7 @@ const _populateReport = async (sheetId: string, payload: any) => {
         issue.key,
         issue.type,
         issue.assignee,
+        addedDuringSprint,
         issue.summary,
         issue.status,
         inProgress,
@@ -124,7 +131,7 @@ const _populateReport = async (sheetId: string, payload: any) => {
       data: [
         {
           majorDimension: 'ROWS',
-          range: 'Sheet1!A:H',
+          range: 'Sheet1!A:I',
           values: sheetData,
         },
       ],
@@ -132,8 +139,23 @@ const _populateReport = async (sheetId: string, payload: any) => {
   })
 
   const totalData = []
-  totalData.push(['Total Stories', 'Total Tasks', 'Total Bugs', 'Total Sub-tasks'])
-  totalData.push([payload.totalStories, payload.totalTasks, payload.totalBugs, payload.totalSubtasks])
+  const {issuesMovedFromSprint} = payload
+  totalData.push([
+    'Total Stories',
+    'Total Tasks',
+    'Total Bugs',
+    'Total Sub-tasks',
+    'Total Ticket Moved In',
+    'Total Tickets Moved Out',
+  ])
+  totalData.push([
+    payload.totalStories,
+    payload.totalTasks,
+    payload.totalBugs,
+    payload.totalSubtasks,
+    totalIssuesMovedIn,
+    issuesMovedFromSprint.length,
+  ])
 
   await gsheets.spreadsheets.values.batchUpdate({
     spreadsheetId: sheetId,
@@ -142,7 +164,7 @@ const _populateReport = async (sheetId: string, payload: any) => {
       data: [
         {
           majorDimension: 'ROWS',
-          range: `Sheet1!J:M`,
+          range: `Sheet1!K:P`,
           values: totalData,
         },
       ],

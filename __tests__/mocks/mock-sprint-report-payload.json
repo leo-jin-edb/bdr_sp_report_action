@@ -1,0 +1,1325 @@
+{
+  "contents": {
+    "completedIssues": [
+      {
+        "id": 105041,
+        "key": "BDR-33",
+        "hidden": false,
+        "typeName": "Task",
+        "typeId": "10002",
+        "summary": "Make consensus snapshot versioning declarative",
+        "typeUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+        "priorityUrl": "https://enterprisedb.atlassian.net/images/icons/priorities/high.svg",
+        "priorityName": "High",
+        "done": true,
+        "assignee": "ug:53f9af88-69a4-456b-b4ec-dbcad7ad269a",
+        "assigneeKey": "ug:53f9af88-69a4-456b-b4ec-dbcad7ad269a",
+        "assigneeAccountId": "5f75b583a29096007501ce07",
+        "assigneeName": "Pavan Deolasee",
+        "avatarUrl": "https://secure.gravatar.com/avatar/14030e9892068be073839bab93cbbea8?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FPD-2.png",
+        "hasCustomUserAvatar": false,
+        "flagged": false,
+        "epic": "BDR-31",
+        "epicField": {
+          "id": "customfield_10005",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "BDR-31",
+          "epicColor": "ghx-label-12",
+          "text": "Rolling Upgrades",
+          "canRemoveEpic": false
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "estimateStatisticRequired": false,
+        "estimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "statusId": "10001",
+        "statusName": "Done",
+        "statusUrl": "https://enterprisedb.atlassian.net/",
+        "status": {
+          "id": "10001",
+          "name": "Done",
+          "description": "",
+          "iconUrl": "https://enterprisedb.atlassian.net/",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [
+          13571
+        ],
+        "projectId": 14416,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 105625,
+        "key": "BDR-48",
+        "hidden": false,
+        "typeName": "Task",
+        "typeId": "10002",
+        "summary": "BDR 3.6.25 preparation",
+        "typeUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+        "priorityUrl": "https://enterprisedb.atlassian.net/images/icons/priorities/medium.svg",
+        "priorityName": "Medium",
+        "done": true,
+        "assignee": "ug:4c67c99d-479a-4d5b-88e3-0274d5c699d2",
+        "assigneeKey": "ug:4c67c99d-479a-4d5b-88e3-0274d5c699d2",
+        "assigneeAccountId": "5f756904e31b69006f8ea4b5",
+        "assigneeName": "Pallavi Sontakke",
+        "avatarUrl": "https://secure.gravatar.com/avatar/eba736e540bebc43c0bbdd32cdc39b13?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FPS-4.png",
+        "hasCustomUserAvatar": false,
+        "flagged": false,
+        "currentEstimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "estimateStatisticRequired": false,
+        "estimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "statusId": "10001",
+        "statusName": "Done",
+        "statusUrl": "https://enterprisedb.atlassian.net/",
+        "status": {
+          "id": "10001",
+          "name": "Done",
+          "description": "",
+          "iconUrl": "https://enterprisedb.atlassian.net/",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [
+          13569
+        ],
+        "projectId": 14416,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 105729,
+        "key": "BDR-49",
+        "hidden": false,
+        "typeName": "Task",
+        "typeId": "10002",
+        "summary": "Add BDR wrapper for `pglogical.alter_subscription_skip_changes_upto`",
+        "typeUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+        "priorityUrl": "https://enterprisedb.atlassian.net/images/icons/priorities/medium.svg",
+        "priorityName": "Medium",
+        "done": true,
+        "assignee": "ug:0bcd6d00-9a6e-42e4-b453-2b9420ba1375",
+        "assigneeKey": "ug:0bcd6d00-9a6e-42e4-b453-2b9420ba1375",
+        "assigneeAccountId": "5f74b0afa290960075f952fe",
+        "assigneeName": "Florin Irion",
+        "avatarUrl": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5f74b0afa290960075f952fe/319caebc-5ebc-4724-8cd8-5bbf45d085bc/48",
+        "hasCustomUserAvatar": false,
+        "flagged": false,
+        "currentEstimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "estimateStatisticRequired": false,
+        "estimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "statusId": "10001",
+        "statusName": "Done",
+        "statusUrl": "https://enterprisedb.atlassian.net/",
+        "status": {
+          "id": "10001",
+          "name": "Done",
+          "description": "",
+          "iconUrl": "https://enterprisedb.atlassian.net/",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [
+          13563
+        ],
+        "projectId": 14416,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 105946,
+        "key": "BDR-58",
+        "hidden": false,
+        "typeName": "Task",
+        "typeId": "10002",
+        "summary": "Reduce 2QPG code foot-print",
+        "typeUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+        "priorityUrl": "https://enterprisedb.atlassian.net/images/icons/priorities/highest.svg",
+        "priorityName": "Highest",
+        "done": true,
+        "assignee": "ashutosh.bapat",
+        "assigneeKey": "ashutosh.bapat",
+        "assigneeAccountId": "557058:c82f6620-a6aa-45db-b235-ccc8e61fa3bb",
+        "assigneeName": "Ashutosh Bapat",
+        "avatarUrl": "https://secure.gravatar.com/avatar/23e0002b20aa4e66e6d9c9e0c2bb0bad?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAB-3.png",
+        "hasCustomUserAvatar": false,
+        "flagged": false,
+        "epic": "BDR-51",
+        "epicField": {
+          "id": "customfield_10005",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "BDR-51",
+          "epicColor": "ghx-label-13",
+          "text": "Single Decoding Worker",
+          "canRemoveEpic": false
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "estimateStatisticRequired": false,
+        "estimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "statusId": "10001",
+        "statusName": "Done",
+        "statusUrl": "https://enterprisedb.atlassian.net/",
+        "status": {
+          "id": "10001",
+          "name": "Done",
+          "description": "",
+          "iconUrl": "https://enterprisedb.atlassian.net/",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [
+          13563
+        ],
+        "projectId": 14416,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 106083,
+        "key": "BDR-65",
+        "hidden": false,
+        "typeName": "Task",
+        "typeId": "10002",
+        "summary": "wal decoder is not enabled on newly joined node",
+        "typeUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+        "priorityUrl": "https://enterprisedb.atlassian.net/images/icons/priorities/medium.svg",
+        "priorityName": "Medium",
+        "done": true,
+        "assignee": "ashutosh.bapat",
+        "assigneeKey": "ashutosh.bapat",
+        "assigneeAccountId": "557058:c82f6620-a6aa-45db-b235-ccc8e61fa3bb",
+        "assigneeName": "Ashutosh Bapat",
+        "avatarUrl": "https://secure.gravatar.com/avatar/23e0002b20aa4e66e6d9c9e0c2bb0bad?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAB-3.png",
+        "hasCustomUserAvatar": false,
+        "flagged": false,
+        "epic": "BDR-51",
+        "epicField": {
+          "id": "customfield_10005",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "BDR-51",
+          "epicColor": "ghx-label-13",
+          "text": "Single Decoding Worker",
+          "canRemoveEpic": false
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "estimateStatisticRequired": false,
+        "estimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "statusId": "10001",
+        "statusName": "Done",
+        "statusUrl": "https://enterprisedb.atlassian.net/",
+        "status": {
+          "id": "10001",
+          "name": "Done",
+          "description": "",
+          "iconUrl": "https://enterprisedb.atlassian.net/",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 14416,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 106124,
+        "key": "BDR-70",
+        "hidden": false,
+        "typeName": "Task",
+        "typeId": "10002",
+        "summary": "Fix broken ddl_epoch snapshot writing in 3.7 (consensus protocol version)",
+        "typeUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+        "priorityUrl": "https://enterprisedb.atlassian.net/images/icons/priorities/medium.svg",
+        "priorityName": "Medium",
+        "done": true,
+        "assignee": "ug:53f9af88-69a4-456b-b4ec-dbcad7ad269a",
+        "assigneeKey": "ug:53f9af88-69a4-456b-b4ec-dbcad7ad269a",
+        "assigneeAccountId": "5f75b583a29096007501ce07",
+        "assigneeName": "Pavan Deolasee",
+        "avatarUrl": "https://secure.gravatar.com/avatar/14030e9892068be073839bab93cbbea8?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FPD-2.png",
+        "hasCustomUserAvatar": false,
+        "flagged": false,
+        "epic": "BDR-31",
+        "epicField": {
+          "id": "customfield_10005",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "BDR-31",
+          "epicColor": "ghx-label-12",
+          "text": "Rolling Upgrades",
+          "canRemoveEpic": false
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "estimateStatisticRequired": false,
+        "estimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "statusId": "10001",
+        "statusName": "Done",
+        "statusUrl": "https://enterprisedb.atlassian.net/",
+        "status": {
+          "id": "10001",
+          "name": "Done",
+          "description": "",
+          "iconUrl": "https://enterprisedb.atlassian.net/",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [
+          13571
+        ],
+        "projectId": 14416,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 106857,
+        "key": "BDR-135",
+        "hidden": false,
+        "typeName": "Bug",
+        "typeId": "10004",
+        "summary": "Fix incompatibility in client response between 3.6 and 3.7",
+        "typeUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10303&avatarType=issuetype",
+        "priorityUrl": "https://enterprisedb.atlassian.net/images/icons/priorities/high.svg",
+        "priorityName": "High",
+        "done": true,
+        "assignee": "ug:53f9af88-69a4-456b-b4ec-dbcad7ad269a",
+        "assigneeKey": "ug:53f9af88-69a4-456b-b4ec-dbcad7ad269a",
+        "assigneeAccountId": "5f75b583a29096007501ce07",
+        "assigneeName": "Pavan Deolasee",
+        "avatarUrl": "https://secure.gravatar.com/avatar/14030e9892068be073839bab93cbbea8?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FPD-2.png",
+        "hasCustomUserAvatar": false,
+        "flagged": false,
+        "currentEstimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "estimateStatisticRequired": false,
+        "estimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "statusId": "10001",
+        "statusName": "Done",
+        "statusUrl": "https://enterprisedb.atlassian.net/",
+        "status": {
+          "id": "10001",
+          "name": "Done",
+          "description": "",
+          "iconUrl": "https://enterprisedb.atlassian.net/",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [
+          13567
+        ],
+        "projectId": 14416,
+        "linkedPagesCount": 0
+      }
+    ],
+    "issuesNotCompletedInCurrentSprint": [],
+    "puntedIssues": [
+      {
+        "id": 104476,
+        "key": "BDR-25",
+        "hidden": false,
+        "typeName": "Task",
+        "typeId": "10002",
+        "summary": "Readjust default truncate handling",
+        "typeUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+        "priorityUrl": "https://enterprisedb.atlassian.net/images/icons/priorities/medium.svg",
+        "priorityName": "Medium",
+        "done": true,
+        "assignee": "ug:271191b6-f08e-48f4-b74d-0f4ac5a80ea5",
+        "assigneeKey": "ug:271191b6-f08e-48f4-b74d-0f4ac5a80ea5",
+        "assigneeAccountId": "5f779a143fe07600696b8f46",
+        "assigneeName": "Oliver Riggs",
+        "avatarUrl": "https://secure.gravatar.com/avatar/ad21dc152060e91684f4d7a982d2d60e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOR-6.png",
+        "hasCustomUserAvatar": false,
+        "flagged": false,
+        "epic": "BDR-20",
+        "epicField": {
+          "id": "customfield_10005",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "BDR-20",
+          "epicColor": "ghx-label-7",
+          "text": "BDR 3.7 SE + EPAS 11, 13",
+          "canRemoveEpic": false
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "estimateStatisticRequired": false,
+        "estimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "statusId": "10401",
+        "statusName": "In Review",
+        "statusUrl": "https://enterprisedb.atlassian.net/",
+        "status": {
+          "id": "10401",
+          "name": "In Review",
+          "description": "",
+          "iconUrl": "https://enterprisedb.atlassian.net/",
+          "statusCategory": {
+            "id": "4",
+            "key": "indeterminate",
+            "colorName": "yellow"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 14416,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 105575,
+        "key": "BDR-39",
+        "hidden": false,
+        "typeName": "Task",
+        "typeId": "10002",
+        "summary": "Migrate from Gitlab to Github",
+        "typeUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+        "priorityUrl": "https://enterprisedb.atlassian.net/images/icons/priorities/medium.svg",
+        "priorityName": "Medium",
+        "done": true,
+        "assignee": "leo.jin",
+        "assigneeKey": "leo.jin",
+        "assigneeAccountId": "5f3e87ae91e67a003fbc3fe1",
+        "assigneeName": "Leo Jin",
+        "avatarUrl": "https://secure.gravatar.com/avatar/539b46bc00ffd1f41b7e5624900bb900?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FLJ-6.png",
+        "hasCustomUserAvatar": false,
+        "flagged": false,
+        "currentEstimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "estimateStatisticRequired": false,
+        "estimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "statusId": "11502",
+        "statusName": "In Testing",
+        "statusUrl": "https://enterprisedb.atlassian.net/",
+        "status": {
+          "id": "11502",
+          "name": "In Testing",
+          "description": "This status is managed internally by Jira Software",
+          "iconUrl": "https://enterprisedb.atlassian.net/",
+          "statusCategory": {
+            "id": "4",
+            "key": "indeterminate",
+            "colorName": "yellow"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 14416,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 105623,
+        "key": "BDR-46",
+        "hidden": false,
+        "typeName": "Task",
+        "typeId": "10002",
+        "summary": "Improve detection of DDL that mixes TEMP and nonTEMP objects",
+        "typeUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+        "priorityUrl": "https://enterprisedb.atlassian.net/images/icons/priorities/medium.svg",
+        "priorityName": "Medium",
+        "done": true,
+        "assignee": "ug:0bcd6d00-9a6e-42e4-b453-2b9420ba1375",
+        "assigneeKey": "ug:0bcd6d00-9a6e-42e4-b453-2b9420ba1375",
+        "assigneeAccountId": "5f74b0afa290960075f952fe",
+        "assigneeName": "Florin Irion",
+        "avatarUrl": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5f74b0afa290960075f952fe/319caebc-5ebc-4724-8cd8-5bbf45d085bc/48",
+        "hasCustomUserAvatar": false,
+        "flagged": false,
+        "currentEstimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "estimateStatisticRequired": false,
+        "estimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "statusId": "3",
+        "statusName": "In Progress",
+        "statusUrl": "https://enterprisedb.atlassian.net/images/icons/statuses/inprogress.png",
+        "status": {
+          "id": "3",
+          "name": "In Progress",
+          "description": "This issue is being actively worked on at the moment by the assignee.",
+          "iconUrl": "https://enterprisedb.atlassian.net/images/icons/statuses/inprogress.png",
+          "statusCategory": {
+            "id": "4",
+            "key": "indeterminate",
+            "colorName": "yellow"
+          }
+        },
+        "fixVersions": [
+          13571
+        ],
+        "projectId": 14416,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 105624,
+        "key": "BDR-47",
+        "hidden": false,
+        "typeName": "Task",
+        "typeId": "10002",
+        "summary": "Add support for EPAS DDL to DDL replication",
+        "typeUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+        "priorityUrl": "https://enterprisedb.atlassian.net/images/icons/priorities/medium.svg",
+        "priorityName": "Medium",
+        "done": true,
+        "assignee": "rahila.syed",
+        "assigneeKey": "rahila.syed",
+        "assigneeAccountId": "557058:afa59d19-6889-47ed-99df-19be98f99e15",
+        "assigneeName": "Rahila Syed",
+        "avatarUrl": "https://secure.gravatar.com/avatar/310686b65c2afd656ca81f77ad136e3b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FRS-4.png",
+        "hasCustomUserAvatar": false,
+        "flagged": false,
+        "epic": "EBC-27",
+        "epicField": {
+          "id": "customfield_10005",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "EBC-27",
+          "epicColor": "ghx-label-1",
+          "text": "BDR SE and EPAS 11-13",
+          "canRemoveEpic": false
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "estimateStatisticRequired": false,
+        "estimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "statusId": "3",
+        "statusName": "In Progress",
+        "statusUrl": "https://enterprisedb.atlassian.net/images/icons/statuses/inprogress.png",
+        "status": {
+          "id": "3",
+          "name": "In Progress",
+          "description": "This issue is being actively worked on at the moment by the assignee.",
+          "iconUrl": "https://enterprisedb.atlassian.net/images/icons/statuses/inprogress.png",
+          "statusCategory": {
+            "id": "4",
+            "key": "indeterminate",
+            "colorName": "yellow"
+          }
+        },
+        "fixVersions": [
+          13571
+        ],
+        "projectId": 14416,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 105730,
+        "key": "BDR-50",
+        "hidden": false,
+        "typeName": "Task",
+        "typeId": "10002",
+        "summary": "CAMO with parallel apply",
+        "typeUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+        "priorityUrl": "https://enterprisedb.atlassian.net/images/icons/priorities/medium.svg",
+        "priorityName": "Medium",
+        "done": true,
+        "assignee": "ug:07058070-943d-43aa-87e2-da1fe767eecd",
+        "assigneeKey": "ug:07058070-943d-43aa-87e2-da1fe767eecd",
+        "assigneeAccountId": "5f779a074d09f70076fbcf2e",
+        "assigneeName": "Markus Wanner",
+        "avatarUrl": "https://secure.gravatar.com/avatar/9c0ae811e702e885468a0dcf6d8b44d3?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMW-0.png",
+        "hasCustomUserAvatar": false,
+        "flagged": false,
+        "epic": "BDR-32",
+        "epicField": {
+          "id": "customfield_10005",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "BDR-32",
+          "epicColor": "ghx-label-6",
+          "text": "Parallel Apply",
+          "canRemoveEpic": false
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "estimateStatisticRequired": false,
+        "estimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "statusId": "11502",
+        "statusName": "In Testing",
+        "statusUrl": "https://enterprisedb.atlassian.net/",
+        "status": {
+          "id": "11502",
+          "name": "In Testing",
+          "description": "This status is managed internally by Jira Software",
+          "iconUrl": "https://enterprisedb.atlassian.net/",
+          "statusCategory": {
+            "id": "4",
+            "key": "indeterminate",
+            "colorName": "yellow"
+          }
+        },
+        "fixVersions": [
+          13563
+        ],
+        "projectId": 14416,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 105772,
+        "key": "BDR-52",
+        "hidden": false,
+        "typeName": "Task",
+        "typeId": "10002",
+        "summary": "Improve tests of single decoder worker",
+        "typeUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+        "priorityUrl": "https://enterprisedb.atlassian.net/images/icons/priorities/medium.svg",
+        "priorityName": "Medium",
+        "done": false,
+        "assignee": "ug:0e41b0f1-6cd4-4e46-80af-a02c365aea45",
+        "assigneeKey": "ug:0e41b0f1-6cd4-4e46-80af-a02c365aea45",
+        "assigneeAccountId": "5f7799968d88b300750807fe",
+        "assigneeName": "Amruta Deolasee",
+        "avatarUrl": "https://secure.gravatar.com/avatar/6db5d88246518949181edd485207dd91?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAD-5.png",
+        "hasCustomUserAvatar": false,
+        "flagged": false,
+        "epic": "BDR-51",
+        "epicField": {
+          "id": "customfield_10005",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "BDR-51",
+          "epicColor": "ghx-label-13",
+          "text": "Single Decoding Worker",
+          "canRemoveEpic": false
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "estimateStatisticRequired": false,
+        "estimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "statusId": "3",
+        "statusName": "In Progress",
+        "statusUrl": "https://enterprisedb.atlassian.net/images/icons/statuses/inprogress.png",
+        "status": {
+          "id": "3",
+          "name": "In Progress",
+          "description": "This issue is being actively worked on at the moment by the assignee.",
+          "iconUrl": "https://enterprisedb.atlassian.net/images/icons/statuses/inprogress.png",
+          "statusCategory": {
+            "id": "4",
+            "key": "indeterminate",
+            "colorName": "yellow"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 14416,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 105863,
+        "key": "BDR-54",
+        "hidden": false,
+        "typeName": "Task",
+        "typeId": "10002",
+        "summary": "HARP fails on BDR-Simple AV",
+        "typeUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+        "priorityUrl": "https://enterprisedb.atlassian.net/images/icons/priorities/medium.svg",
+        "priorityName": "Medium",
+        "done": true,
+        "assignee": "ug:7e857910-f988-43f7-bb91-b90240c8a8d7",
+        "assigneeKey": "ug:7e857910-f988-43f7-bb91-b90240c8a8d7",
+        "assigneeAccountId": "5f7799bbe31b69006fa1b43f",
+        "assigneeName": "Bharat Telange",
+        "avatarUrl": "https://secure.gravatar.com/avatar/7c9bbcff05872b019361b9d26708efb2?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FBT-2.png",
+        "hasCustomUserAvatar": false,
+        "flagged": false,
+        "currentEstimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "estimateStatisticRequired": false,
+        "estimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "statusId": "10001",
+        "statusName": "Done",
+        "statusUrl": "https://enterprisedb.atlassian.net/",
+        "status": {
+          "id": "10001",
+          "name": "Done",
+          "description": "",
+          "iconUrl": "https://enterprisedb.atlassian.net/",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 14416,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 106123,
+        "key": "BDR-69",
+        "hidden": false,
+        "typeName": "Task",
+        "typeId": "10002",
+        "summary": "\nEnable integration tests pipeline for PG12, 2QPG12 and EPAS12",
+        "typeUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+        "priorityUrl": "https://enterprisedb.atlassian.net/images/icons/priorities/medium.svg",
+        "priorityName": "Medium",
+        "done": true,
+        "assignee": "ug:4c67c99d-479a-4d5b-88e3-0274d5c699d2",
+        "assigneeKey": "ug:4c67c99d-479a-4d5b-88e3-0274d5c699d2",
+        "assigneeAccountId": "5f756904e31b69006f8ea4b5",
+        "assigneeName": "Pallavi Sontakke",
+        "avatarUrl": "https://secure.gravatar.com/avatar/eba736e540bebc43c0bbdd32cdc39b13?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FPS-4.png",
+        "hasCustomUserAvatar": false,
+        "flagged": false,
+        "currentEstimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "estimateStatisticRequired": false,
+        "estimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "statusId": "11502",
+        "statusName": "In Testing",
+        "statusUrl": "https://enterprisedb.atlassian.net/",
+        "status": {
+          "id": "11502",
+          "name": "In Testing",
+          "description": "This status is managed internally by Jira Software",
+          "iconUrl": "https://enterprisedb.atlassian.net/",
+          "statusCategory": {
+            "id": "4",
+            "key": "indeterminate",
+            "colorName": "yellow"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 14416,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 106125,
+        "key": "BDR-71",
+        "hidden": false,
+        "typeName": "Task",
+        "typeId": "10002",
+        "summary": "Analyze TAP tests results from CI and prepare tickets for failing ones for BDR 3.7",
+        "typeUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+        "priorityUrl": "https://enterprisedb.atlassian.net/images/icons/priorities/medium.svg",
+        "priorityName": "Medium",
+        "done": true,
+        "assignee": "ug:7e857910-f988-43f7-bb91-b90240c8a8d7",
+        "assigneeKey": "ug:7e857910-f988-43f7-bb91-b90240c8a8d7",
+        "assigneeAccountId": "5f7799bbe31b69006fa1b43f",
+        "assigneeName": "Bharat Telange",
+        "avatarUrl": "https://secure.gravatar.com/avatar/7c9bbcff05872b019361b9d26708efb2?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FBT-2.png",
+        "hasCustomUserAvatar": false,
+        "flagged": false,
+        "currentEstimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "estimateStatisticRequired": false,
+        "estimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "statusId": "3",
+        "statusName": "In Progress",
+        "statusUrl": "https://enterprisedb.atlassian.net/images/icons/statuses/inprogress.png",
+        "status": {
+          "id": "3",
+          "name": "In Progress",
+          "description": "This issue is being actively worked on at the moment by the assignee.",
+          "iconUrl": "https://enterprisedb.atlassian.net/images/icons/statuses/inprogress.png",
+          "statusCategory": {
+            "id": "4",
+            "key": "indeterminate",
+            "colorName": "yellow"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 14416,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 106130,
+        "key": "BDR-72",
+        "hidden": false,
+        "typeName": "Task",
+        "typeId": "10002",
+        "summary": "Reduce 2QPG code footprint for CAMO (part 1: 2pc decoding)",
+        "typeUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+        "priorityUrl": "https://enterprisedb.atlassian.net/images/icons/priorities/medium.svg",
+        "priorityName": "Medium",
+        "done": true,
+        "assignee": "ug:07058070-943d-43aa-87e2-da1fe767eecd",
+        "assigneeKey": "ug:07058070-943d-43aa-87e2-da1fe767eecd",
+        "assigneeAccountId": "5f779a074d09f70076fbcf2e",
+        "assigneeName": "Markus Wanner",
+        "avatarUrl": "https://secure.gravatar.com/avatar/9c0ae811e702e885468a0dcf6d8b44d3?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMW-0.png",
+        "hasCustomUserAvatar": false,
+        "flagged": false,
+        "epic": "BDR-18",
+        "epicField": {
+          "id": "customfield_10005",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "BDR-18",
+          "epicColor": "ghx-label-7",
+          "text": "BDR EE + EPAS 14",
+          "canRemoveEpic": false
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "estimateStatisticRequired": false,
+        "estimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "statusId": "3",
+        "statusName": "In Progress",
+        "statusUrl": "https://enterprisedb.atlassian.net/images/icons/statuses/inprogress.png",
+        "status": {
+          "id": "3",
+          "name": "In Progress",
+          "description": "This issue is being actively worked on at the moment by the assignee.",
+          "iconUrl": "https://enterprisedb.atlassian.net/images/icons/statuses/inprogress.png",
+          "statusCategory": {
+            "id": "4",
+            "key": "indeterminate",
+            "colorName": "yellow"
+          }
+        },
+        "fixVersions": [
+          13571
+        ],
+        "projectId": 14416,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 106636,
+        "key": "BDR-114",
+        "hidden": false,
+        "typeName": "Task",
+        "typeId": "10002",
+        "summary": "Are things working sufficiently fine on TPAexec tests for BDR 3.6.25?",
+        "typeUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+        "priorityUrl": "https://enterprisedb.atlassian.net/images/icons/priorities/medium.svg",
+        "priorityName": "Medium",
+        "done": true,
+        "assignee": "ug:0e41b0f1-6cd4-4e46-80af-a02c365aea45",
+        "assigneeKey": "ug:0e41b0f1-6cd4-4e46-80af-a02c365aea45",
+        "assigneeAccountId": "5f7799968d88b300750807fe",
+        "assigneeName": "Amruta Deolasee",
+        "avatarUrl": "https://secure.gravatar.com/avatar/6db5d88246518949181edd485207dd91?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAD-5.png",
+        "hasCustomUserAvatar": false,
+        "flagged": false,
+        "currentEstimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "estimateStatisticRequired": false,
+        "estimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "statusId": "10001",
+        "statusName": "Done",
+        "statusUrl": "https://enterprisedb.atlassian.net/",
+        "status": {
+          "id": "10001",
+          "name": "Done",
+          "description": "",
+          "iconUrl": "https://enterprisedb.atlassian.net/",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 14416,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 106639,
+        "key": "BDR-116",
+        "hidden": false,
+        "typeName": "Task",
+        "typeId": "10002",
+        "summary": "Test `002_function_disarray.pl` is passing in the EE run for BDR 3.6. But failing for the SE run with usual PG11 ",
+        "typeUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+        "priorityUrl": "https://enterprisedb.atlassian.net/images/icons/priorities/medium.svg",
+        "priorityName": "Medium",
+        "done": true,
+        "assignee": "ug:23855fb6-d2ee-413d-b4bb-9cc27382a58a",
+        "assigneeKey": "ug:23855fb6-d2ee-413d-b4bb-9cc27382a58a",
+        "assigneeAccountId": "5f75653858899e0070628376",
+        "assigneeName": "Vinit Amrutkar",
+        "avatarUrl": "https://secure.gravatar.com/avatar/4b7576e3557c9ecd48777aa14e88767b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVA-1.png",
+        "hasCustomUserAvatar": false,
+        "flagged": false,
+        "currentEstimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "estimateStatisticRequired": false,
+        "estimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "statusId": "10001",
+        "statusName": "Done",
+        "statusUrl": "https://enterprisedb.atlassian.net/",
+        "status": {
+          "id": "10001",
+          "name": "Done",
+          "description": "",
+          "iconUrl": "https://enterprisedb.atlassian.net/",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 14416,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 106717,
+        "key": "BDR-126",
+        "hidden": false,
+        "typeName": "Task",
+        "typeId": "10002",
+        "summary": "Simple and rolling cluster Upgrade tests",
+        "typeUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+        "priorityUrl": "https://enterprisedb.atlassian.net/images/icons/priorities/medium.svg",
+        "priorityName": "Medium",
+        "done": true,
+        "assignee": "ug:0e41b0f1-6cd4-4e46-80af-a02c365aea45",
+        "assigneeKey": "ug:0e41b0f1-6cd4-4e46-80af-a02c365aea45",
+        "assigneeAccountId": "5f7799968d88b300750807fe",
+        "assigneeName": "Amruta Deolasee",
+        "avatarUrl": "https://secure.gravatar.com/avatar/6db5d88246518949181edd485207dd91?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAD-5.png",
+        "hasCustomUserAvatar": false,
+        "flagged": false,
+        "currentEstimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "estimateStatisticRequired": false,
+        "estimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "statusId": "11674",
+        "statusName": "Abandoned",
+        "statusUrl": "https://enterprisedb.atlassian.net/",
+        "status": {
+          "id": "11674",
+          "name": "Abandoned",
+          "description": "This status is managed internally by Jira Software",
+          "iconUrl": "https://enterprisedb.atlassian.net/",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 14416,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 106808,
+        "key": "BDR-133",
+        "hidden": false,
+        "typeName": "Bug",
+        "typeId": "10004",
+        "summary": "assert-bdr-version command from tpaexec fails with sudo: command not found",
+        "typeUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10303&avatarType=issuetype",
+        "priorityUrl": "https://enterprisedb.atlassian.net/images/icons/priorities/medium.svg",
+        "priorityName": "Medium",
+        "done": false,
+        "assignee": "ug:06da3d48-a5ee-4f92-b42d-d2230f6c92c5",
+        "assigneeKey": "ug:06da3d48-a5ee-4f92-b42d-d2230f6c92c5",
+        "assigneeAccountId": "5f760ad2e31b69006f94d463",
+        "assigneeName": "Gianni Ciolli",
+        "avatarUrl": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5f760ad2e31b69006f94d463/9693a4c3-bf4f-4c57-b851-a560f32e5785/48",
+        "hasCustomUserAvatar": false,
+        "flagged": false,
+        "currentEstimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "estimateStatisticRequired": false,
+        "estimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "statusId": "10001",
+        "statusName": "Done",
+        "statusUrl": "https://enterprisedb.atlassian.net/",
+        "status": {
+          "id": "10001",
+          "name": "Done",
+          "description": "",
+          "iconUrl": "https://enterprisedb.atlassian.net/",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 14416,
+        "linkedPagesCount": 0
+      }
+    ],
+    "issuesCompletedInAnotherSprint": [
+      {
+        "id": 105608,
+        "key": "BDR-44",
+        "hidden": false,
+        "typeName": "Task",
+        "typeId": "10002",
+        "summary": "Async commit for CAMO",
+        "typeUrl": "https://enterprisedb.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+        "priorityUrl": "https://enterprisedb.atlassian.net/images/icons/priorities/medium.svg",
+        "priorityName": "Medium",
+        "done": true,
+        "assignee": "ug:07058070-943d-43aa-87e2-da1fe767eecd",
+        "assigneeKey": "ug:07058070-943d-43aa-87e2-da1fe767eecd",
+        "assigneeAccountId": "5f779a074d09f70076fbcf2e",
+        "assigneeName": "Markus Wanner",
+        "avatarUrl": "https://secure.gravatar.com/avatar/9c0ae811e702e885468a0dcf6d8b44d3?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMW-0.png",
+        "hasCustomUserAvatar": false,
+        "flagged": false,
+        "epic": "BDR-32",
+        "epicField": {
+          "id": "customfield_10005",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "BDR-32",
+          "epicColor": "ghx-label-6",
+          "text": "Parallel Apply",
+          "canRemoveEpic": false
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "estimateStatisticRequired": false,
+        "estimateStatistic": {
+          "statFieldId": "issueCount",
+          "statFieldValue": {
+            "value": 1.0,
+            "text": "1.0"
+          }
+        },
+        "statusId": "10001",
+        "statusName": "Done",
+        "statusUrl": "https://enterprisedb.atlassian.net/",
+        "status": {
+          "id": "10001",
+          "name": "Done",
+          "description": "",
+          "iconUrl": "https://enterprisedb.atlassian.net/",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [
+          13563
+        ],
+        "projectId": 14416,
+        "linkedPagesCount": 0
+      }
+    ],
+    "completedIssuesInitialEstimateSum": {
+      "value": 7.0,
+      "text": "7.0"
+    },
+    "completedIssuesEstimateSum": {
+      "value": 7.0,
+      "text": "7.0"
+    },
+    "issuesNotCompletedInitialEstimateSum": {
+      "text": "null"
+    },
+    "issuesNotCompletedEstimateSum": {
+      "text": "null"
+    },
+    "allIssuesEstimateSum": {
+      "value": 27.0,
+      "text": "27.0"
+    },
+    "puntedIssuesInitialEstimateSum": {
+      "value": 14.0,
+      "text": "14.0"
+    },
+    "puntedIssuesEstimateSum": {
+      "value": 14.0,
+      "text": "14.0"
+    },
+    "issuesCompletedInAnotherSprintInitialEstimateSum": {
+      "value": 1.0,
+      "text": "1.0"
+    },
+    "issuesCompletedInAnotherSprintEstimateSum": {
+      "value": 1.0,
+      "text": "1.0"
+    },
+    "issueKeysAddedDuringSprint": {
+      "BDR-116": true,
+      "BDR-126": true,
+      "BDR-133": true,
+      "BDR-114": true,
+      "BDR-135": true
+    }
+  },
+  "sprint": {
+    "id": 1345,
+    "sequence": 1345,
+    "name": "Planning Sprint 1",
+    "state": "CLOSED",
+    "linkedPagesCount": 0,
+    "goal": "Wrap stuff up and make progress toward critical epics.",
+    "startDate": "01/Feb/21 9:22 AM",
+    "endDate": "15/Feb/21 9:22 AM",
+    "isoStartDate": "2021-02-01T09:22:18-0500",
+    "isoEndDate": "2021-02-15T09:22:00-0500",
+    "completeDate": "16/Feb/21 8:44 AM",
+    "isoCompleteDate": "2021-02-16T08:44:45-0500",
+    "canUpdateSprint": true,
+    "remoteLinks": [],
+    "daysRemaining": 0
+  },
+  "lastUserToClose": "<a class=\"user-hover\" rel=\"5f3e87ae91e67a003fbc3fe1\" id=\"_5f3e87ae91e67a003fbc3fe1\" data-user=\"{&quot;accountId&quot;: &quot;5f3e87ae91e67a003fbc3fe1&quot;}\" href=\"/secure/ViewProfile.jspa?accountId=5f3e87ae91e67a003fbc3fe1\">Leo Jin</a>",
+  "supportsPages": true
+}
