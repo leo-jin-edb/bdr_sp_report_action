@@ -175,7 +175,7 @@ const _populateReport = async (sheetId: string, payload: any) => {
 const writeData = async (payload: any, sprintId: string) => {
   // get sprint based on id
   const sprintInfo = await getSprint(sprintId)
-  const {sprint, issues} = sprintInfo
+  const {sprint} = sprintInfo
   const reportName = `${sprint.id}_${snakeCase(sprint.name)}`
   const reportFolderName = `Ops_reporting`
   const reportAdminEmail = 'leo.jin@enterprisedb.com'
@@ -183,15 +183,23 @@ const writeData = async (payload: any, sprintId: string) => {
     const reportFolder = await _findReportFolder(reportFolderName)
     if (reportFolder) {
       const report = await _findReport(reportName)
+      let spreadsheetId = ''
       if (report) {
-        // delete if found
-        info(`report with name "${reportName}"  found, we delete and recreate`)
-        await gdrive.files.delete({
-          fileId: report.id as string,
+        // clear if found
+        info(`report with name "${reportName}"  found, we clear and recreate`)
+        spreadsheetId = report.id as string
+        await gsheets.spreadsheets.values.batchClear({
+          spreadsheetId,
+          requestBody: {
+            ranges: ['Sheet1!A:P'],
+          },
         })
       }
-      const spreadsheetId = (await _createReport(reportName)) as string
-      await _shareAndMoveSheet(spreadsheetId, reportFolder.id as string, reportAdminEmail)
+      if (spreadsheetId == '') {
+        // if blank, we need to create the report
+        spreadsheetId = (await _createReport(reportName)) as string
+        await _shareAndMoveSheet(spreadsheetId, reportFolder.id as string, reportAdminEmail)
+      }
       await _populateReport(spreadsheetId, payload)
     } else {
       throw `Reporting folder with name "${reportFolderName}" was not found`
