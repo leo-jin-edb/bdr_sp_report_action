@@ -83,6 +83,7 @@ const _populateReport = async (sheetId: string, payload: any) => {
     'In Progress (minutes)',
     'In Review (minutes)',
     'In Testing (minutes)',
+    'Total Lifetime (minutes)'
   ]
   const issues = payload.issues as any[]
   let totalIssuesMovedIn = 0
@@ -121,6 +122,7 @@ const _populateReport = async (sheetId: string, payload: any) => {
         inProgress,
         inReview,
         inTesting,
+        Number.parseFloat(inProgress)+Number.parseFloat(inReview)+Number.parseFloat(inTesting)
       ])
     })
   }
@@ -131,7 +133,7 @@ const _populateReport = async (sheetId: string, payload: any) => {
       data: [
         {
           majorDimension: 'ROWS',
-          range: 'Sheet1!A:I',
+          range: 'Sheet1!A:J',
           values: sheetData,
         },
       ],
@@ -164,7 +166,7 @@ const _populateReport = async (sheetId: string, payload: any) => {
       data: [
         {
           majorDimension: 'ROWS',
-          range: `Sheet1!K:P`,
+          range: `Sheet1!L:Q`,
           values: totalData,
         },
       ],

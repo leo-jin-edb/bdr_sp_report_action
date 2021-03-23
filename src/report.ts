@@ -1,7 +1,8 @@
 import JiraClient from 'jira-client'
 import {flattenDeep, reverse} from 'lodash'
-import {differenceInSeconds} from 'date-fns'
+import {differenceInSeconds, format} from 'date-fns'
 import {error} from '@actions/core'
+import {info} from 'console'
 
 let jiraApi: JiraClient
 const boardId = '316'
@@ -102,13 +103,24 @@ const getAllIssuesForSprint = async (sprintId: string) => {
   try {
     // get sprint report
     const report = await _processSprintReport(sprintId)
-    const jql = `project = 'BDR (Bi-directional replication)' AND Sprint = ${sprintId}`
+    const {issuesCompletedInSprint, issuesMovedFromSprint, sprintInfo} = report
+    const {isoStartDate, isoCompleteDate} = sprintInfo
+    const sprintStartDate = Date.parse(isoStartDate)
+    const sprintEndDate = Date.parse(isoCompleteDate)
+    const jql = `project = "BDR (Bi-directional replication)" AND issuetype in (Story, Task, Bug, Sub-task) AND (status changed to Done DURING (${format(
+      sprintStartDate,
+      'yyyy-MM-dd',
+    )},${format(sprintEndDate, 'yyyy-MM-dd')}) OR status changed to Abandoned during (${format(
+      sprintStartDate,
+      'yyyy-MM-dd',
+    )},${format(sprintEndDate, 'yyyy-MM-dd')})) ORDER BY key ASC`
+    info(`Running jql: "${jql}"`)
     const response = await jiraApi.searchJira(jql, {
       fields: ['issuekey', 'issuetype', 'summary', 'status', 'assignee', 'created', 'sprint.name', 'sprint.id'],
       expand: ['changelog'],
+      maxResults: 1000,
     })
     const {total, issues} = response
-    const {issuesCompletedInSprint, issuesMovedFromSprint, sprintInfo} = report
 
     const issuesLite = issues.map((issue: any) => {
       const {id, key, fields, changelog} = issue
@@ -117,7 +129,7 @@ const getAllIssuesForSprint = async (sprintId: string) => {
       if (reportRecord) {
         const {addedDuringSprint: ads} = reportRecord
         addedDuringSprint = ads
-      } 
+      }
       const {summary, issuetype, assignee, status, created} = fields
       const {histories} = changelog
       const history = _transformHistory(histories)
